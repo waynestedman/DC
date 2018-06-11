@@ -1,0 +1,60 @@
+$scmTeal: #68bebc;
+
+.hero, .history, .info, .productInfo, .carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content-wrapper {
+  h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  .scm-btn {
+    position: absolute;
+    background: $scmTeal;
+    border: 1px solid $scmTeal;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+
+    &:hover {
+      background: lighten($scmTeal, 20%);
+      border: 1px solid $scmTeal;
+      color: #fff;
+    }
+  }
+  .slick-next, .slick-arrow {
+    border: none;
+  }
+}
+
+
+
+.video-carousel {
+  .carousel {
+    margin-top: -75px;
+    padding: 100px 0;
+    text-align: center;
+
+    .widget .block-products-list .add-button {
+      font-weight: 400;
+      // background: $blue700;
+      // border: 1px solid $blue700;
+      // color: #fff;
+      // padding: 10px 20px;
+      // margin-top: 20px;
+      //
+      // &:hover {
+      //   background: lighten($blue700, 20%);
+      //   border: 1px solid $blue700;
+      //   color: #fff;
+      // }
+    }
+  }
+}

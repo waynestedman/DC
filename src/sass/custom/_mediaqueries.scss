@@ -1,0 +1,42 @@
+@media only screen and (max-width: 599px) {
+  .cms-page-view .column.main p {
+    margin: 0 auto 10px auto;
+  }
+  .content-wrapper {
+    h1 {
+      font-size: 45px;
+    }
+    h2 {
+      font-size: 45px;
+    }
+    h3 {
+      font-size: 39px;
+    }
+    h4 {
+      font-size: 30px;
+    }
+    h6 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 15px;
+    }
+    a {
+      color: $scmTeal;
+    }
+  }
+} // 365 to 640
+@media only screen and (max-width: 387px) {
+  .content-wrapper {
+
+  }
+}
+@media only screen and (max-width: 363px) {
+
+}
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .content-wrapper a {
+    color: $scmTeal;
+  }
+
+} // min 641 to max 1024

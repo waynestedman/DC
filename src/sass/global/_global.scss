@@ -1,0 +1,122 @@
+* {box-sizing: border-box;}
+body {
+  font-family: $baseFontFamily;
+  color: $baseFont-color;
+  background: $viewportBackground-color;
+}
+.cms-page-view .column.main img {
+  margin: 0;
+}
+.columns .column.main {
+  padding-bottom: 0;
+}
+.modal-popup .modal-footer {
+  display: none;
+}
+.content-wrapper {
+  font-weight: 300;
+  max-width: 1280px;
+  margin: 0 auto;
+  line-height: 1.4;
+  background: #fff;
+
+  .row {
+    margin: 0;
+  }
+  .column {
+    flex-direction: column;
+  }
+  .block-title {
+    text-align: center;
+    margin: 0;
+  }
+  .widget .block-title>strong {
+    font-size: 4rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+  }
+  .block.widget .products-grid .product-item {
+    margin: 0;
+  }
+  .widget.block-products-list .add-button {
+    font-weight: 400;
+
+    &:hover {
+      background: #00388D;
+      border: 1px solid #00388D;
+      color: #fff;
+    }
+  }
+  .product-item-link {
+    text-transform: none;
+  }
+  .widget.block-products-list .product-item-name {
+     height: 52px;
+  }
+  .price-wrapper {
+    font-weight: 400;
+  }
+  h1 {
+    font-size: 70px;
+    // font-weight: 300;
+  }
+  h2 {
+    font-size: 60px;
+    // font-weight: 300;
+  }
+  h3 {
+    font-size: 50px;
+    // font-weight: 300;
+  }
+  h4 {
+    font-size: 40px;
+    font-weight: 300;
+  }
+  h5 {
+    font-size: 30px;
+    // font-weight: 300;
+    margin-top: 2.6rem;
+    margin-bottom: .4rem;
+  }
+  h6 {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 18px;
+    // font-weight: 300;
+  }
+  .weight400 {
+    font-weight: 400;
+  }
+  a {
+    text-decoration: none;
+    color: $gray900;
+    cursor: pointer;
+  }
+  button {
+    // color: $gray900;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: none;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .cta {
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .slick-arrow {
+    // color: $gray700;
+    background: none;
+  }
+  .linkCTA {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
