@@ -1,0 +1,261 @@
+/* Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  color: #424649;
+  background: #DDDDDD;
+}
+
+.cms-page-view .column.main img {
+  margin: 0;
+}
+
+.columns .column.main {
+  padding-bottom: 0;
+}
+
+.modal-popup .modal-footer {
+  display: none;
+}
+
+.content-wrapper {
+  font-weight: 300;
+  max-width: 1280px;
+  margin: 0 auto;
+  line-height: 1.4;
+  background: #fff;
+}
+
+.content-wrapper .row {
+  margin: 0;
+}
+
+.content-wrapper .column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.content-wrapper .block-title {
+  text-align: center;
+  margin: 0;
+}
+
+.content-wrapper .widget .block-title > strong {
+  font-size: 4rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+.content-wrapper .block.widget .products-grid .product-item {
+  margin: 0;
+}
+
+.content-wrapper .widget.block-products-list .add-button {
+  font-weight: 400;
+}
+
+.content-wrapper .widget.block-products-list .add-button:hover {
+  background: #00388D;
+  border: 1px solid #00388D;
+  color: #fff;
+}
+
+.content-wrapper .product-item-link {
+  text-transform: none;
+}
+
+.content-wrapper .widget.block-products-list .product-item-name {
+  height: 52px;
+}
+
+.content-wrapper .price-wrapper {
+  font-weight: 400;
+}
+
+.content-wrapper h1 {
+  font-size: 70px;
+}
+
+.content-wrapper h2 {
+  font-size: 60px;
+}
+
+.content-wrapper h3 {
+  font-size: 50px;
+}
+
+.content-wrapper h4 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.content-wrapper h5 {
+  font-size: 30px;
+  margin-top: 2.6rem;
+  margin-bottom: .4rem;
+}
+
+.content-wrapper h6 {
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.content-wrapper p {
+  font-size: 18px;
+}
+
+.content-wrapper .weight400 {
+  font-weight: 400;
+}
+
+.content-wrapper a {
+  text-decoration: none;
+  color: #212121;
+  cursor: pointer;
+}
+
+.content-wrapper button {
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.content-wrapper .cta {
+  font-weight: 400;
+}
+
+.content-wrapper .cta:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content-wrapper .slick-arrow {
+  background: none;
+}
+
+.content-wrapper .linkCTA {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero, .history, .info, .productInfo, .carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.hero img, .history img, .info img, .productInfo img, .carousel img {
+  width: 1280px;
+  height: 100%;
+}
+
+.content-wrapper h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.content-wrapper .slick-next, .content-wrapper .slick-arrow {
+  border: none;
+}
+
+.hero {
+  background-image: url("../../images/hero.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+}
+
+.hero .hero-text {
+  text-align: center;
+  padding-left: 65%;
+  padding-top: 2%;
+  width: 90%;
+}
+
+.history {
+  background-image: url("../../images/history.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+}
+
+.history .history-text {
+  text-align: center;
+  padding-left: 30%;
+  padding-top: 8%;
+  width: 75%;
+}
+
+.productInfo h2 {
+  margin: 0 auto;
+}
+
+.carousel {
+  text-align: center;
+}
+
+.carousel .widget .block-products-list .add-button {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 599px) {
+  .cms-page-view .column.main p {
+    margin: 0 auto 10px auto;
+  }
+  .content-wrapper h1 {
+    font-size: 45px;
+  }
+  .content-wrapper h2 {
+    font-size: 45px;
+  }
+  .content-wrapper h3 {
+    font-size: 39px;
+  }
+  .content-wrapper h4 {
+    font-size: 30px;
+  }
+  .content-wrapper h6 {
+    font-size: 18px;
+  }
+  .content-wrapper p {
+    font-size: 15px;
+  }
+  .content-wrapper a {
+    color: #ffd54f;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .content-wrapper a {
+    color: #ffd54f;
+  }
+}
+
+
+
+/*# sourceMappingURL=styles.css.map */

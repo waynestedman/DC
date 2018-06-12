@@ -1,9 +1,13 @@
-$scmTeal: #68bebc;
+$dcGold: #ffd54f;
 
 .hero, .history, .info, .productInfo, .carousel {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  img {
+    width: 1280px;
+    height: 100%;
+  }
 }
 
 .content-wrapper {
@@ -11,50 +15,75 @@ $scmTeal: #68bebc;
     font-size: 60px;
     margin-bottom: 20px;
   }
-  .scm-btn {
-    position: absolute;
-    background: $scmTeal;
-    border: 1px solid $scmTeal;
-    color: #fff;
-    padding: 10px 20px;
-    margin-top: 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 400;
-
-    &:hover {
-      background: lighten($scmTeal, 20%);
-      border: 1px solid $scmTeal;
-      color: #fff;
-    }
-  }
+  // .scm-btn {
+  //   position: absolute;
+  //   background: $dcGold;
+  //   border: 1px solid $dcGold;
+  //   color: #fff;
+  //   padding: 10px 20px;
+  //   margin-top: 20px;
+  //   text-transform: uppercase;
+  //   cursor: pointer;
+  //   font-size: 20px;
+  //   font-weight: 400;
+  //
+  //   &:hover {
+  //     background: lighten($dcGold, 20%);
+  //     border: 1px solid $dcGold;
+  //     color: #fff;
+  //   }
+  // }
   .slick-next, .slick-arrow {
     border: none;
   }
 }
-
-
-
-.video-carousel {
-  .carousel {
-    margin-top: -75px;
-    padding: 100px 0;
+.hero {
+  background-image: url('../../images/hero.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+  .hero-text {
     text-align: center;
+    padding-left: 65%;
+    padding-top: 2%;
+    width: 90%;
+  }
+}
+.history {
+  background-image: url('../../images/history.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+  .history-text {
+    text-align: center;
+    padding-left: 30%;
+    padding-top: 8%;
+    width: 75%;
+  }
+}
+.productInfo {
+  h2 {
+    margin: 0 auto;
+  }
+}
 
-    .widget .block-products-list .add-button {
-      font-weight: 400;
-      // background: $blue700;
-      // border: 1px solid $blue700;
-      // color: #fff;
-      // padding: 10px 20px;
-      // margin-top: 20px;
-      //
-      // &:hover {
-      //   background: lighten($blue700, 20%);
-      //   border: 1px solid $blue700;
-      //   color: #fff;
-      // }
-    }
+.carousel {
+  // margin-top: -75px;
+  // padding: 100px 0;
+  text-align: center;
+
+  .widget .block-products-list .add-button {
+    font-weight: 400;
+    // background: $blue700;
+    // border: 1px solid $blue700;
+    // color: #fff;
+    // padding: 10px 20px;
+    // margin-top: 20px;
+    //
+    // &:hover {
+    //   background: lighten($blue700, 20%);
+    //   border: 1px solid $blue700;
+    //   color: #fff;
+    // }
   }
 }

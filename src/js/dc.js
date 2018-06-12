@@ -32,10 +32,10 @@ $(document).ready(function(){
     ]
   });
 
-  var videoModal = $('#video').modal();
-  $('#openVideo').on('click', function(e) {
-    e.preventDefault();
-    videoModal.modal('openModal');
-   $("#simple-iframe").attr('src', "https://fast.wistia.net/embed/iframe/ozmj3dq5tp?videoFoam=true&autoplay=1");
-  });
+  // var videoModal = $('#video').modal();
+  // $('#openVideo').on('click', function(e) {
+  //   e.preventDefault();
+  //   videoModal.modal('openModal');
+  //  $("#simple-iframe").attr('src', "https://fast.wistia.net/embed/iframe/ozmj3dq5tp?videoFoam=true&autoplay=1");
+  // });
 }); // doc ready
