@@ -1,6 +1,6 @@
 $dcGold: #ffd54f;
 
-.hero, .history, .info, .productInfo, .carousel {
+.hero, .history, .info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -8,6 +8,12 @@ $dcGold: #ffd54f;
     width: 1280px;
     height: 100%;
   }
+}
+.productInfo, .carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
 }
 
 .content-wrapper {
@@ -62,8 +68,31 @@ $dcGold: #ffd54f;
   }
 }
 .productInfo {
+  background-color: $blue200;
+  width: 100%;
+  padding-bottom: 200px;
+
   h2 {
+    margin: 4rem  auto;
+  }
+  #productsSlider {
+    width: 90%;
     margin: 0 auto;
+
+    img {
+      width: 320px;
+    }
+    // li img {
+    //   width: 50px;
+    // }
+  }
+  .slick-dots {
+    bottom: -200px;
+
+    li {
+      height: 200px;
+      width: 200px;
+    }
   }
 }
 

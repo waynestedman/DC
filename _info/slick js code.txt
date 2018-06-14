@@ -1,0 +1,18 @@
+Use customPaging, dots: true, and appendDots:
+$('.myslickcarousel).slick({
+dots: true,
+appendDots:$('some div outside of .myslickcarousel'),
+customPaging:function(slider, pageIndex) {
+//you can reference the slider being instantiated as slider.$slider
+return $('<button></button').text(slider.$slider.data('buttonlabel');>
+
+*********************************************************************************
+customPaging: function(slider, i) {
+    var thumbnail = $(slider.$slides[i]).data("thumbnail");
+    return '<a href="javascript:void(0)"><img src="'+thumbnail+'">'</a>;}
+
+*********************************************************************************
+
+customPaging: function(slider, i) {
+                    return $('<button type="button" />').text(i + 1);
+                },
