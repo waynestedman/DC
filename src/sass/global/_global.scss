@@ -105,7 +105,8 @@ body {
   }
   .cta {
     font-weight: 400;
-
+    text-transform: uppercase;
+    
     &:hover {
       text-decoration: underline;
       cursor: pointer;

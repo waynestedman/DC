@@ -1,6 +1,6 @@
 $dcGold: #ffd54f;
 
-.hero, .history, .info {
+.hero, .history {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -56,21 +56,64 @@ $dcGold: #ffd54f;
   }
 }
 .history {
-  background-image: url('../../images/history.png');
+  background-image: url('../../images/dc-intro.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 500px;
+  background-position: top left;
+  height: 750px;
   .history-text {
     text-align: center;
     padding-left: 30%;
-    padding-top: 8%;
+    padding-top: 10%;
     width: 75%;
+  }
+}
+.info {
+  flex-direction: column;
+
+  #row1 {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .infoRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  #row2 {
+    border-bottom: 1px solid $gray400;
+    width: 80%;
+    padding-bottom: 20px;
+    margin: 0 auto 20px auto;
+  }
+  .step1, .step2 {
+    width: 35%;
+
+    h6 {
+      border-bottom: 1px solid $gray400;
+      width: 90px;
+    }
+  }
+  .step1 {
+    text-align: right;
+    h6 {
+      margin-left: 75%;
+    }
+  }
+  .info-icon {
+    width: 15%;
+  }
+  .step2 {
+    text-align: left;
   }
 }
 .productInfo {
   background-color: $blue200;
   width: 100%;
-  padding-bottom: 200px;
+  padding-bottom: 240px;
 
   h2 {
     margin: 4rem  auto;
@@ -79,19 +122,42 @@ $dcGold: #ffd54f;
     width: 90%;
     margin: 0 auto;
 
+    .productInfo-details {
+      padding-left: 3%;
+    }
     img {
       width: 320px;
+      display: inline-block;
     }
-    // li img {
-    //   width: 50px;
-    // }
+    .productInfo-text {
+      display: inline-block;
+      width: 50%;
+      margin-left: 32px;
+
+      p {
+        margin: 0;
+      }
+    }
   }
   .slick-dots {
     bottom: -200px;
 
     li {
-      height: 200px;
-      width: 200px;
+      height: 120px;
+      width: 150px;
+      padding: 0 14px;
+      margin: 0;
+      border-right: 1px solid #222;
+
+      &:last-child {
+        border-right: none;
+      }
+      img {
+        height: 100%;
+        max-height: 150px;
+        // width: 100% !important;
+        // max-width: 150px;
+      }
     }
   }
 }

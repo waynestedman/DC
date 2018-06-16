@@ -136,6 +136,7 @@ body {
 
 .content-wrapper .cta {
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .content-wrapper .cta:hover {
@@ -152,13 +153,13 @@ body {
   text-transform: uppercase;
 }
 
-.hero, .history, .info {
+.hero, .history {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.hero img, .history img, .info img {
+.hero img, .history img {
   width: 1280px;
   height: 100%;
 }
@@ -194,23 +195,74 @@ body {
 }
 
 .history {
-  background-image: url("../../images/history.png");
+  background-image: url("../../images/dc-intro.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 500px;
+  background-position: top left;
+  height: 750px;
 }
 
 .history .history-text {
   text-align: center;
   padding-left: 30%;
-  padding-top: 8%;
+  padding-top: 10%;
   width: 75%;
+}
+
+.info {
+  flex-direction: column;
+}
+
+.info #row1 {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.info .infoRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.info #row2 {
+  border-bottom: 1px solid #BDBDBD;
+  width: 80%;
+  padding-bottom: 20px;
+  margin: 0 auto 20px auto;
+}
+
+.info .step1, .info .step2 {
+  width: 35%;
+}
+
+.info .step1 h6, .info .step2 h6 {
+  border-bottom: 1px solid #BDBDBD;
+  width: 90px;
+}
+
+.info .step1 {
+  text-align: right;
+}
+
+.info .step1 h6 {
+  margin-left: 75%;
+}
+
+.info .info-icon {
+  width: 15%;
+}
+
+.info .step2 {
+  text-align: left;
 }
 
 .productInfo {
   background-color: #ECF3F9;
   width: 100%;
-  padding-bottom: 200px;
+  padding-bottom: 240px;
 }
 
 .productInfo h2 {
@@ -222,8 +274,23 @@ body {
   margin: 0 auto;
 }
 
+.productInfo #productsSlider .productInfo-details {
+  padding-left: 3%;
+}
+
 .productInfo #productsSlider img {
   width: 320px;
+  display: inline-block;
+}
+
+.productInfo #productsSlider .productInfo-text {
+  display: inline-block;
+  width: 50%;
+  margin-left: 32px;
+}
+
+.productInfo #productsSlider .productInfo-text p {
+  margin: 0;
 }
 
 .productInfo .slick-dots {
@@ -231,8 +298,20 @@ body {
 }
 
 .productInfo .slick-dots li {
-  height: 200px;
-  width: 200px;
+  height: 120px;
+  width: 150px;
+  padding: 0 14px;
+  margin: 0;
+  border-right: 1px solid #222;
+}
+
+.productInfo .slick-dots li:last-child {
+  border-right: none;
+}
+
+.productInfo .slick-dots li img {
+  height: 100%;
+  max-height: 150px;
 }
 
 .carousel {
