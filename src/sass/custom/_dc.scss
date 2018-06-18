@@ -70,7 +70,13 @@ $dcGold: #ffd54f;
 }
 .info {
   flex-direction: column;
-
+  background-image: url('../../images/info-border.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top left;
+  padding-top: 40px;
+  width: 95%;
+  margin: 0 auto;
   #row1 {
     margin: 0 auto;
     text-align: center;
@@ -108,6 +114,22 @@ $dcGold: #ffd54f;
   }
   .step2 {
     text-align: left;
+  }
+  #row3 {
+    .atGlance {
+      border-right: 1px solid $gray400;
+      display: flex;
+      flex-direction: row;
+      width: 30%;
+      .atGlance-text {
+
+      }
+    } // atGlance
+    .video {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+    } // video
   }
 }
 .productInfo {

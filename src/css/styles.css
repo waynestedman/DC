@@ -211,6 +211,13 @@ body {
 
 .info {
   flex-direction: column;
+  background-image: url("../../images/info-border.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top left;
+  padding-top: 40px;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .info #row1 {
@@ -257,6 +264,19 @@ body {
 
 .info .step2 {
   text-align: left;
+}
+
+.info #row3 .atGlance {
+  border-right: 1px solid #BDBDBD;
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+}
+
+.info #row3 .video {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
 }
 
 .productInfo {
