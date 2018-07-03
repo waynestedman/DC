@@ -22,7 +22,7 @@
       font-size: 15px;
     }
     a {
-      color: $dcGold;
+      color: $dcBlue;
     }
   }
 } // 365 to 640
@@ -36,7 +36,7 @@
 }
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   .content-wrapper a {
-    color: $dcGold;
+    color: $dcBlue;
   }
 
 } // min 641 to max 1024

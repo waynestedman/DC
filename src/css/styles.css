@@ -84,36 +84,43 @@ body {
 }
 
 .content-wrapper h1 {
-  font-size: 70px;
+  font-size: 60px;
+  line-height: 1.3;
 }
 
 .content-wrapper h2 {
-  font-size: 60px;
+  font-size: 50px;
+  line-height: 1.3;
 }
 
 .content-wrapper h3 {
-  font-size: 50px;
+  font-size: 35px;
+  line-height: 1.3;
 }
 
 .content-wrapper h4 {
   font-size: 40px;
+  line-height: 1.4;
   font-weight: 300;
 }
 
 .content-wrapper h5 {
   font-size: 30px;
+  line-height: 1.4;
+  font-weight: 300;
   margin-top: 2.6rem;
   margin-bottom: .4rem;
 }
 
 .content-wrapper h6 {
   font-size: 20px;
+  line-height: 1.4;
   font-weight: 300;
-  text-transform: uppercase;
 }
 
 .content-wrapper p {
   font-size: 18px;
+  line-height: 1.4;
 }
 
 .content-wrapper .weight400 {
@@ -127,21 +134,37 @@ body {
 }
 
 .content-wrapper button {
+  color: #424649;
   text-transform: uppercase;
   cursor: pointer;
   background: none;
-  font-size: 24px;
+  border: 1px solid #424649;
+  font-size: 16px;
   font-weight: 400;
+  margin-top: 20px;
+}
+
+.content-wrapper li {
+  font-size: 16px;
 }
 
 .content-wrapper .cta {
   font-weight: 400;
+  cursor: pointer;
   text-transform: uppercase;
+  margin-top: 20px;
 }
 
 .content-wrapper .cta:hover {
   text-decoration: underline;
-  cursor: pointer;
+}
+
+.content-wrapper .slick-list {
+  margin-left: -18px;
+}
+
+.content-wrapper .slick-prev, .content-wrapper .slick-next {
+  font-size: 0;
 }
 
 .content-wrapper .slick-arrow {
@@ -181,7 +204,7 @@ body {
 }
 
 .hero {
-  background-image: url("../../images/hero.png");
+  background-image: url("../../images/hero-fpo.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 500px;
@@ -189,9 +212,17 @@ body {
 
 .hero .hero-text {
   text-align: center;
-  padding-left: 65%;
+  padding-left: 58%;
   padding-top: 2%;
-  width: 90%;
+}
+
+.hero .hero-text img {
+  width: 150px;
+  height: 70px;
+}
+
+.hero .hero-text h1 {
+  width: 95%;
 }
 
 .history {
@@ -210,77 +241,117 @@ body {
 }
 
 .info {
+  display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 85%;
+  margin: -100px auto 20px auto;
+  box-shadow: -1px -1px 15px 3px rgba(196, 196, 196, 0.6);
+}
+
+.info .info-border {
   background-image: url("../../images/info-border.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: top left;
-  padding-top: 40px;
-  width: 95%;
-  margin: 0 auto;
+  margin: 10px;
 }
 
-.info #row1 {
+.info .info-border .info-whatIs {
   margin: 0 auto;
   text-align: center;
   width: 80%;
-  margin-bottom: 20px;
 }
 
-.info .infoRow {
+.info .info-border .stepsIcon {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-}
-
-.info #row2 {
   border-bottom: 1px solid #BDBDBD;
   width: 80%;
   padding-bottom: 20px;
   margin: 0 auto 20px auto;
 }
 
-.info .step1, .info .step2 {
+.info .info-border .step1, .info .info-border .step2 {
   width: 35%;
 }
 
-.info .step1 h6, .info .step2 h6 {
+.info .info-border .step1 h6, .info .info-border .step2 h6 {
   border-bottom: 1px solid #BDBDBD;
   width: 90px;
 }
 
-.info .step1 {
+.info .info-border .step1 {
   text-align: right;
 }
 
-.info .step1 h6 {
+.info .info-border .step1 h6 {
   margin-left: 75%;
 }
 
-.info .info-icon {
+.info .info-border .info-icon {
   width: 15%;
 }
 
-.info .step2 {
+.info .info-border .step2 {
   text-align: left;
 }
 
-.info #row3 .atGlance {
-  border-right: 1px solid #BDBDBD;
-  display: flex;
-  flex-direction: row;
-  width: 30%;
+.info .info-border .video {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
 }
 
-.info #row3 .video {
-  display: flex;
-  flex-direction: row;
-  width: 50%;
+.info .info-border .video:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+* html .info .info-border .video {
+  height: 1px;
+}
+
+.info .info-border .video .video-thumbnail {
+  max-width: 1068px;
+  max-height: 150px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.info .info-border .video .video-thumbnail .video-text {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+}
+
+.info .info-border .video .video-thumbnail .video-text img {
+  display: inline-block;
+  margin-right: 22px;
+  width: 40px;
+  vertical-align: middle;
+}
+
+.info .info-border .video .video-thumbnail .video-text h4 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.info .info-border .video .video-thumbnail .video-button {
+  margin-right: 20px;
+  width: 34px;
+  height: 34px;
+  vertical-align: middle;
 }
 
 .productInfo {
-  background-color: #ECF3F9;
   width: 100%;
   padding-bottom: 240px;
 }
@@ -298,26 +369,31 @@ body {
   padding-left: 3%;
 }
 
-.productInfo #productsSlider img {
+.productInfo #productsSlider .productInfo-details img {
   width: 320px;
   display: inline-block;
 }
 
-.productInfo #productsSlider .productInfo-text {
+.productInfo #productsSlider .productInfo-details .productInfo-text {
   display: inline-block;
   width: 50%;
   margin-left: 32px;
 }
 
-.productInfo #productsSlider .productInfo-text p {
+.productInfo #productsSlider .productInfo-details .productInfo-text .productDesc-cta {
   margin: 0;
 }
 
-.productInfo .slick-dots {
+.productInfo #productsSlider .productInfo-details .productInfo-text .productDesc-cta span {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.productInfo #productsSlider .slick-dots {
   bottom: -200px;
 }
 
-.productInfo .slick-dots li {
+.productInfo #productsSlider .slick-dots li {
   height: 120px;
   width: 150px;
   padding: 0 14px;
@@ -325,13 +401,19 @@ body {
   border-right: 1px solid #222;
 }
 
-.productInfo .slick-dots li:last-child {
+.productInfo #productsSlider .slick-dots li:last-child {
   border-right: none;
 }
 
-.productInfo .slick-dots li img {
+.productInfo #productsSlider .slick-dots li img {
   height: 100%;
   max-height: 150px;
+}
+
+.productInfo #productsSlider .slick-dots .slick-active {
+  border-bottom: 2px solid #00388d;
+  padding-bottom: 12px;
+  height: 134px;
 }
 
 .carousel {
@@ -365,13 +447,13 @@ body {
     font-size: 15px;
   }
   .content-wrapper a {
-    color: #ffd54f;
+    color: #00388d;
   }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   .content-wrapper a {
-    color: #ffd54f;
+    color: #00388d;
   }
 }
 

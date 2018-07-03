@@ -9,7 +9,7 @@
   "author": "Wayne Stedman",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^8.3.0",
+    "autoprefixer": "^8.6.4",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
     "gulp-if": "^2.0.2",

@@ -12,9 +12,20 @@
 }
 
 // Clearfix
-@mixin clearfix() {
-	content: "";
-	display: table;
+// @mixin clearfix() {
+// 	content: "";
+// 	display: table;
+// }
+@mixin clearfix {
+  display: block;
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  * html & { height: 1px }
 }
 
 // Clear after (not all clearfix need this also)
