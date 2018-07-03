@@ -80,26 +80,31 @@ $dcBlue: #00388d;
   }
 }
 .info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-around;
   background-color: rgba(255, 255, 255, .8);
   width: 85%;
-  margin: -100px auto 20px auto;
+  margin: -170px auto 20px auto;
   box-shadow: -1px -1px 15px 3px rgba(196,196,196,0.6);
+  // background-position: top;
 
   .info-border {
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    // height: 960px;
     background-image: url('../../images/info-border.svg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: top left;
-    margin: 10px;
+    background-size: 100%, 100%;
+    background-position-x: center;
+    background-position-y: 10px;
+    padding: 20px 40px 10px 40px;
 
     .info-whatIs {
-      margin: 0 auto;
       text-align: center;
-      width: 80%;
-      // margin-bottom: 20px;
+      width: 82%;
+      margin: 20px auto 40px auto;
     }
     .stepsIcon {
       display: flex;
@@ -107,33 +112,31 @@ $dcBlue: #00388d;
       flex-wrap: nowrap;
       justify-content: space-evenly;
       border-bottom: 1px solid $gray400;
-      width: 80%;
-      padding-bottom: 20px;
-      margin: 0 auto 20px auto;
-    }
-    .step1, .step2 {
-      width: 35%;
+      width: 82%;
+      padding-bottom: 40px;
+      margin: 0 auto 40px auto;
+      text-align: center;
 
-      h6 {
-        border-bottom: 1px solid $gray400;
-        width: 90px;
+      .step1, .step2 {
+        width: 40%;
+
+        h6 {
+          border-bottom: 1px solid $gray400;
+          width: 70px;
+          margin: 20px auto;
+        }
+        p {
+          margin: 0;
+        }
       }
-    }
-    .step1 {
-      text-align: right;
-      h6 {
-        margin-left: 75%;
+      .info-icon {
+        width: 28%;
+        margin: 0 40px;
       }
-    }
-    .info-icon {
-      width: 15%;
-    }
-    .step2 {
-      text-align: left;
-    }
+    } //stepsIcon
     .video {
-      width: 80%;
-      margin: 0 auto;
+      width: 90%;
+      margin: 40px auto 40px auto;
       @include clearfix;
       // .atGlance {
       //   border-right: 1px solid $gray400;
@@ -187,9 +190,9 @@ $dcBlue: #00388d;
   #productsSlider {
     width: 90%;
     margin: 0 auto;
+    padding-left: 3%;
+    // .productInfo-details {
 
-    .productInfo-details {
-      padding-left: 3%;
 
       img {
         width: 320px;
@@ -209,7 +212,7 @@ $dcBlue: #00388d;
           }
         }
       } // productInfo-text
-    } // productInfo-details
+    // } // productInfo-details
     .slick-dots {
       bottom: -200px;
 
@@ -217,7 +220,7 @@ $dcBlue: #00388d;
         height: 120px;
         width: 150px;
         padding: 0 14px;
-        margin: 0;
+        margin: 10px;
         border-right: 1px solid #222;
 
         &:last-child {

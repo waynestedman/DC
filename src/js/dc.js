@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $("#productsSlider").slick({
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
     cssEase: 'ease-in-out',
     dots: true,
