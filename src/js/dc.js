@@ -13,7 +13,7 @@ $(document).ready(function(){
     // slidesToScroll: 1,
     customPaging: function(slider, i) {
         var thumbnail = $(slider.$slides[i]).data("thumbnail");
-        return '<a href="javascript:void(0)"><img src="'+thumbnail+'"></a>'}
+        return '<a href="javascript:void(0)"><img src="'+thumbnail+'" class="img-wrapper"></a>'}
   });
   // $('.setsCarousel').slick({
   //   dots: false,

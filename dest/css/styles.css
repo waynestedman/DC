@@ -254,8 +254,24 @@ body {
 .history .history-text {
   text-align: center;
   padding-left: 30%;
-  padding-top: 10%;
+  padding-top: 4%;
   width: 75%;
+}
+
+.history .history-text .history-upperDivider {
+  background-image: url("../../images/3-drops.svg");
+  background-repeat: repeat-x;
+  width: 408px;
+  height: 30px;
+  margin: 0 auto 30px auto;
+}
+
+.history .history-text .history-lowerDivider {
+  background-image: url("../../images/3-drops.svg");
+  background-repeat: repeat-x;
+  width: 135px;
+  height: 30px;
+  margin: 30px auto;
 }
 
 .info {
@@ -416,24 +432,26 @@ body {
 .productInfo #productsSlider .slick-dots li {
   height: 120px;
   width: 150px;
-  padding: 0 14px;
   margin: 10px;
+}
+
+.productInfo #productsSlider .slick-dots li .img-wrapper {
+  padding-right: 18px;
   border-right: 1px solid #222;
 }
 
-.productInfo #productsSlider .slick-dots li:last-child {
+.productInfo #productsSlider .slick-dots li:last-child img {
   border-right: none;
 }
 
-.productInfo #productsSlider .slick-dots li img {
-  height: 100%;
-  max-height: 150px;
+.productInfo #productsSlider .slick-dots .slick-active {
+  height: 134px;
 }
 
-.productInfo #productsSlider .slick-dots .slick-active {
+.productInfo #productsSlider .slick-dots .slick-active a {
+  width: 100px;
   border-bottom: 2px solid #00388d;
-  padding-bottom: 12px;
-  height: 134px;
+  padding-bottom: 6px;
 }
 
 .carousel {
@@ -442,6 +460,46 @@ body {
 
 .carousel .widget .block-products-list .add-button {
   font-weight: 400;
+}
+
+.blog {
+  height: 600px;
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+.blog .blog-text {
+  position: absolute;
+  margin-left: 5%;
+  display: inline-block;
+  width: 33%;
+}
+
+.blog .blog-text h2 {
+  margin-bottom: 1rem;
+}
+
+.blog .blog-text h5 {
+  font-size: 34px;
+  line-height: 1.3;
+  margin-top: 0;
+  margin-bottom: 2.2rem;
+  width: 60%;
+}
+
+.blog .blog-text p {
+  margin-bottom: 2rem;
+}
+
+.blog .toners-img {
+  width: 100%;
+  display: inline-block;
+  float: right;
+}
+
+.blog .toners-img img {
+  width: 1280px;
+  float: right;
 }
 
 @media only screen and (max-width: 599px) {
