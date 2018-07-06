@@ -277,30 +277,24 @@ body {
 .info {
   background-color: rgba(255, 255, 255, 0.8);
   width: 85%;
-  margin: -170px auto 20px auto;
+  margin: -170px auto 40px auto;
   -webkit-box-shadow: -1px -1px 15px 3px rgba(196, 196, 196, 0.6);
   box-shadow: -1px -1px 15px 3px rgba(196, 196, 196, 0.6);
 }
 
 .info .info-border {
-  margin-left: auto;
-  margin-right: auto;
-  width: 98%;
-  background-image: url("../../images/info-border.svg");
-  background-repeat: no-repeat;
-  background-size: 100%, 100%;
-  background-position-x: center;
-  background-position-y: 10px;
-  padding: 20px 40px 10px 40px;
+  margin: 0 auto;
+  height: 20px;
+  padding: 10px;
 }
 
-.info .info-border .info-whatIs {
+.info .info-whatIs {
   text-align: center;
   width: 82%;
   margin: 20px auto 40px auto;
 }
 
-.info .info-border .stepsIcon {
+.info .stepsIcon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,70 +314,110 @@ body {
   text-align: center;
 }
 
-.info .info-border .stepsIcon .step1, .info .info-border .stepsIcon .step2 {
+.info .stepsIcon .step1, .info .stepsIcon .step2 {
   width: 40%;
 }
 
-.info .info-border .stepsIcon .step1 h6, .info .info-border .stepsIcon .step2 h6 {
+.info .stepsIcon .step1 h6, .info .stepsIcon .step2 h6 {
   border-bottom: 1px solid #BDBDBD;
   width: 70px;
   margin: 20px auto;
 }
 
-.info .info-border .stepsIcon .step1 p, .info .info-border .stepsIcon .step2 p {
+.info .stepsIcon .step1 p, .info .stepsIcon .step2 p {
   margin: 0;
 }
 
-.info .info-border .stepsIcon .info-icon {
+.info .stepsIcon .info-icon {
   width: 28%;
   margin: 0 40px;
 }
 
-.info .info-border .video {
+.info .benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.info .benefit {
+  width: 25%;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.info .benefit svg {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.info .benefit svg path {
+  fill: #ffd54f;
+}
+
+.info .benefit svg .blue {
+  fill: #00388d;
+}
+
+.info .benefit p {
+  width: 75%;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.info .benefit p .benefit-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.info .video {
   width: 90%;
-  margin: 40px auto 40px auto;
-  display: block;
+  margin: 20px auto 0 auto;
 }
 
-.info .info-border .video:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-
-* html .info .info-border .video {
-  height: 1px;
-}
-
-.info .info-border .video .video-thumbnail {
+.info .video .video-thumbnail {
   max-width: 1068px;
   max-height: 150px;
   margin: 0 auto;
   position: relative;
 }
 
-.info .info-border .video .video-thumbnail .video-text {
+.info .video .video-thumbnail .video-text {
   position: absolute;
   top: 30px;
   left: 60px;
 }
 
-.info .info-border .video .video-thumbnail .video-text img {
+.info .video .video-thumbnail .video-text img {
   display: inline-block;
   margin-right: 22px;
   width: 40px;
   vertical-align: middle;
 }
 
-.info .info-border .video .video-thumbnail .video-text h4 {
+.info .video .video-thumbnail .video-text h4 {
   display: inline-block;
   vertical-align: middle;
   color: #ffffff;
 }
 
-.info .info-border .video .video-thumbnail .video-button {
+.info .video .video-thumbnail .video-button {
   margin-right: 20px;
   width: 34px;
   height: 34px;
@@ -410,10 +444,23 @@ body {
   display: inline-block;
 }
 
+.productInfo #productsSlider .productInfo-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .productInfo #productsSlider .productInfo-text {
   display: inline-block;
   width: 50%;
   margin-left: 32px;
+}
+
+.productInfo #productsSlider .productInfo-text .productInfo-desc {
+  margin: 20px 0;
 }
 
 .productInfo #productsSlider .productInfo-text .productDesc-cta {

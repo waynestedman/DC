@@ -1,4 +1,5 @@
 $dcBlue: #00388d;
+$dcGold: #ffd54f;
 
 .hero, .history {
   display: flex;
@@ -50,17 +51,14 @@ $dcBlue: #00388d;
   height: 500px;
 
   .hero-text {
-    // position: relative;
     text-align: center;
     padding-left: 58%;
     padding-top: 2%;
-    // width: 50%;
 
     img {
       width: 150px;
       height: 70px;
     }
-
     h1 {
       width: 95%;
     }
@@ -96,105 +94,122 @@ $dcBlue: #00388d;
   } // history-text
 } // history
 .info {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-around;
   background-color: rgba(255, 255, 255, .8);
   width: 85%;
-  margin: -170px auto 20px auto;
+  margin: -170px auto 40px auto;
   box-shadow: -1px -1px 15px 3px rgba(196,196,196,0.6);
-  // background-position: top;
 
   .info-border {
-    margin-left: auto;
-    margin-right: auto;
-    width: 98%;
-    // height: 960px;
-    background-image: url('../../images/info-border.svg');
-    background-repeat: no-repeat;
-    background-size: 100%, 100%;
-    background-position-x: center;
-    background-position-y: 10px;
-    padding: 20px 40px 10px 40px;
-
-    .info-whatIs {
-      text-align: center;
-      width: 82%;
-      margin: 20px auto 40px auto;
-    }
-    .stepsIcon {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-evenly;
-      border-bottom: 1px solid $gray400;
-      width: 82%;
-      padding-bottom: 40px;
-      margin: 0 auto 40px auto;
-      text-align: center;
-
-      .step1, .step2 {
-        width: 40%;
-
-        h6 {
-          border-bottom: 1px solid $gray400;
-          width: 70px;
-          margin: 20px auto;
-        }
-        p {
-          margin: 0;
-        }
-      }
-      .info-icon {
-        width: 28%;
-        margin: 0 40px;
-      }
-    } //stepsIcon
-    .video {
-      width: 90%;
-      margin: 40px auto 40px auto;
-      @include clearfix;
-      // .atGlance {
-      //   border-right: 1px solid $gray400;
-      //   display: flex;
-      //   flex-direction: row;
-      //   width: 30%;
-      //   .atGlance-text {
-      //
-      //   }
-      // } // atGlance
-      .video-thumbnail {
-        max-width: 1068px;
-        max-height: 150px;
-        margin: 0 auto;
-        position: relative;
-
-        .video-text {
-          position: absolute;
-          top: 30px;
-          left: 60px;
-
-          img {
-            display: inline-block;
-            margin-right: 22px;
-            width: 40px;
-            vertical-align: middle;
-          }
-          h4 {
-            display: inline-block;
-            vertical-align: middle;
-            color: #ffffff;
-          }
-        } // video-text
-        .video-button {
-          margin-right: 20px;
-          width: 34px;
-          height: 34px;
-          vertical-align: middle;
-        } // video-button
-      } // video-thumbnail
-    } // video
+    margin: 0 auto;
+    // width: 98%;
+    height: 20px;
+    padding: 10px;
   } // info-border
+  .info-whatIs {
+    text-align: center;
+    width: 82%;
+    margin: 20px auto 40px auto;
+  }
+  .stepsIcon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    border-bottom: 1px solid $gray400;
+    width: 82%;
+    padding-bottom: 40px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+
+    .step1, .step2 {
+      width: 40%;
+
+      h6 {
+        border-bottom: 1px solid $gray400;
+        width: 70px;
+        margin: 20px auto;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    .info-icon {
+      width: 28%;
+      margin: 0 40px;
+    }
+  } //stepsIcon
+  .benefits {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .benefit {
+    width: 25%;
+    margin: 10px;
+    display: flex;
+    align-items: flex-start;
+
+    svg {
+      display: inline-block;
+      margin-right: 8px;
+      path {
+        fill: $dcGold;
+      } // path
+      .blue {
+        fill: $dcBlue;
+      }
+    }
+    p {
+      width: 75%;
+      display: inline-block;
+      font-size: 16px;
+
+      .benefit-title {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 15px;
+      }
+    }
+  } // benefit
+  .video {
+    width: 90%;
+    margin: 20px auto 0 auto;
+    // @include clearfix;
+
+    .video-thumbnail {
+      max-width: 1068px;
+      max-height: 150px;
+      margin: 0 auto;
+      position: relative;
+
+      .video-text {
+        position: absolute;
+        top: 30px;
+        left: 60px;
+
+        img {
+          display: inline-block;
+          margin-right: 22px;
+          width: 40px;
+          vertical-align: middle;
+        }
+        h4 {
+          display: inline-block;
+          vertical-align: middle;
+          color: #ffffff;
+        }
+      } // video-text
+      .video-button {
+        margin-right: 20px;
+        width: 34px;
+        height: 34px;
+        vertical-align: middle;
+      } // video-button
+    } // video-thumbnail
+  } // video
 } // info
 .productInfo {
   width: 100%;
@@ -207,28 +222,32 @@ $dcBlue: #00388d;
     width: 90%;
     margin: 0 auto;
     padding-left: 3%;
-    // .productInfo-details {
 
+    img {
+      width: 320px;
+      display: inline-block;
+    }
+    .productInfo-details {
+      display: flex;
+      align-items: center;
+    }
+    .productInfo-text {
+      display: inline-block;
+      width: 50%;
+      margin-left: 32px;
 
-      img {
-        width: 320px;
-        display: inline-block;
+      .productInfo-desc {
+        margin: 20px 0;
       }
-      .productInfo-text {
-        display: inline-block;
-        width: 50%;
-        margin-left: 32px;
+      .productDesc-cta {
+        margin: 0;
 
-        .productDesc-cta {
-          margin: 0;
-
-          span {
-            font-weight: 400;
-            text-transform: uppercase;
-          }
+        span {
+          font-weight: 400;
+          text-transform: uppercase;
         }
-      } // productInfo-text
-    // } // productInfo-details
+      } // productDesc-cta
+    } // productInfo-text
     .slick-dots {
       bottom: -200px;
 
@@ -278,7 +297,6 @@ $dcBlue: #00388d;
   }
 } // carousel
 .blog {
-  // background: linear-gradient($psnWhite, $psnBlue, $psnWhite);
   height: 600px;
   margin: 0;
   padding: 0 0 20px 0;
