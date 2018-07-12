@@ -203,8 +203,12 @@ body {
   border: none;
 }
 
+.content-wrapper .text-blue {
+  color: #00388d;
+}
+
 .hero {
-  background-image: url("../../images/hero-fpo.jpg");
+  background-image: url("../../images/dc-hero.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 500px;
@@ -213,16 +217,17 @@ body {
 .hero .hero-text {
   text-align: center;
   padding-left: 58%;
-  padding-top: 2%;
+  padding-top: 10%;
 }
 
 .hero .hero-text img {
-  width: 150px;
-  height: 70px;
+  width: 200px;
+  height: 69px;
 }
 
 .hero .hero-text h1 {
   width: 95%;
+  margin: 0 auto;
 }
 
 .history {
@@ -245,7 +250,7 @@ body {
   background-repeat: repeat-x;
   width: 408px;
   height: 30px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 40px auto;
 }
 
 .history .history-text .history-lowerDivider {
@@ -253,12 +258,13 @@ body {
   background-repeat: repeat-x;
   width: 135px;
   height: 30px;
-  margin: 30px auto;
+  margin: 40px auto;
 }
 
 .info {
   background-color: rgba(255, 255, 255, 0.8);
   width: 85%;
+  padding-bottom: 90px;
   margin: -170px auto 40px auto;
   box-shadow: -1px -1px 15px 3px rgba(196, 196, 196, 0.6);
 }
@@ -280,9 +286,7 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  border-bottom: 1px solid #BDBDBD;
   width: 82%;
-  padding-bottom: 40px;
   margin: 0 auto 40px auto;
   text-align: center;
 }
@@ -317,14 +321,16 @@ body {
 
 .info .benefit {
   width: 25%;
-  margin: 10px;
+  margin: 10px auto;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
+  text-align: center;
 }
 
 .info .benefit svg {
   display: inline-block;
-  margin-right: 8px;
+  margin: 0 auto 10px auto;
 }
 
 .info .benefit svg path {
@@ -336,19 +342,21 @@ body {
 }
 
 .info .benefit p {
+  margin-left: auto;
+  margin-right: auto;
   width: 75%;
   display: inline-block;
   font-size: 16px;
 }
 
-.info .benefit p .benefit-title {
+.info .benefit p.benefit-title {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 15px;
 }
 
 .info .video {
-  width: 90%;
+  width: 80%;
   margin: 20px auto 0 auto;
 }
 
@@ -361,28 +369,27 @@ body {
 
 .info .video .video-thumbnail .video-text {
   position: absolute;
-  top: 30px;
-  left: 60px;
+  top: 10px;
+  left: 40px;
 }
 
-.info .video .video-thumbnail .video-text img {
-  display: inline-block;
-  margin-right: 22px;
-  width: 40px;
-  vertical-align: middle;
-}
-
-.info .video .video-thumbnail .video-text h4 {
-  display: inline-block;
-  vertical-align: middle;
-  color: #ffffff;
-}
-
-.info .video .video-thumbnail .video-button {
+.info .video .video-thumbnail .video-text .video-button {
   margin-right: 20px;
   width: 34px;
   height: 34px;
   vertical-align: middle;
+  display: inline-block;
+}
+
+.info .video .video-thumbnail .video-text img {
+  padding-top: 12px;
+  width: 40px;
+}
+
+.info .video .video-thumbnail .video-text h5 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000000;
 }
 
 .productInfo {
@@ -434,26 +441,18 @@ body {
 }
 
 .productInfo #productsSlider .slick-dots li {
-  height: 120px;
-  width: 150px;
-  margin: 10px;
-}
-
-.productInfo #productsSlider .slick-dots li .img-wrapper {
-  padding-right: 18px;
-  border-right: 1px solid #222;
+  margin: 10px 20px;
 }
 
 .productInfo #productsSlider .slick-dots li:last-child img {
   border-right: none;
 }
 
-.productInfo #productsSlider .slick-dots .slick-active {
-  height: 134px;
+.productInfo #productsSlider .slick-dots li img {
+  margin: 0 auto;
 }
 
 .productInfo #productsSlider .slick-dots .slick-active a {
-  width: 100px;
   border-bottom: 2px solid #00388d;
   padding-bottom: 6px;
 }
@@ -474,34 +473,30 @@ body {
 
 .blog .blog-text {
   position: absolute;
-  margin-left: 5%;
+  margin-left: 10%;
   display: inline-block;
-  width: 33%;
+  width: 28%;
 }
 
 .blog .blog-text h2 {
-  margin-bottom: 1rem;
-}
-
-.blog .blog-text h5 {
-  font-size: 34px;
-  line-height: 1.3;
-  margin-top: 0;
-  margin-bottom: 2.2rem;
-  width: 60%;
+  margin-bottom: 2rem;
 }
 
 .blog .blog-text p {
   margin-bottom: 2rem;
 }
 
-.blog .toners-img {
+.blog .blog-text a:hover {
+  color: #004098;
+}
+
+.blog .blog-img {
   width: 100%;
   display: inline-block;
   float: right;
 }
 
-.blog .toners-img img {
+.blog .blog-img img {
   width: 1280px;
   float: right;
 }
