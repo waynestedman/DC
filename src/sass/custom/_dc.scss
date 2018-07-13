@@ -106,14 +106,13 @@ $dcGold: #ffd54f;
 
   .info-border {
     margin: 0 auto;
-    // width: 98%;
     height: 20px;
     padding: 10px;
   } // info-border
   .info-whatIs {
     text-align: center;
     width: 82%;
-    margin: 20px auto 40px auto;
+    margin: 40px auto 40px auto;
   }
   .stepsIcon {
     display: flex;
@@ -223,7 +222,7 @@ $dcGold: #ffd54f;
 } // info
 .productInfo {
   width: 100%;
-  padding-bottom: 240px;
+  padding-bottom: 140px;
 
   h2 {
     margin: 4rem  auto;
@@ -259,22 +258,18 @@ $dcGold: #ffd54f;
       } // productDesc-cta
     } // productInfo-text
     .slick-dots {
-      bottom: -200px;
+      bottom: -120px;
 
       li {
-        // height: 100px;
-        // width: 6%;
-        margin: 10px 20px;
-        // padding-left: 20px;
-        // padding-right: 20px;
-        // border-right: 1px solid #222;
+        height: 86px;
+        width: 100px;
+        padding-left: 14px;
+        border-left: 1px solid #222;
 
-        &:last-child img {
-          border-right: none;
+        &:first-child {
+          border-left: none;
         }
         img {
-          // height: 200px;
-          // width: 400px;
           margin: 0 auto;
         }
       } // li

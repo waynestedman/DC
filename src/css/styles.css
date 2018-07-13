@@ -278,7 +278,7 @@ body {
 .info .info-whatIs {
   text-align: center;
   width: 82%;
-  margin: 20px auto 40px auto;
+  margin: 40px auto 40px auto;
 }
 
 .info .stepsIcon {
@@ -394,7 +394,7 @@ body {
 
 .productInfo {
   width: 100%;
-  padding-bottom: 240px;
+  padding-bottom: 140px;
 }
 
 .productInfo h2 {
@@ -437,15 +437,18 @@ body {
 }
 
 .productInfo #productsSlider .slick-dots {
-  bottom: -200px;
+  bottom: -120px;
 }
 
 .productInfo #productsSlider .slick-dots li {
-  margin: 10px 20px;
+  height: 86px;
+  width: 100px;
+  padding-left: 14px;
+  border-left: 1px solid #222;
 }
 
-.productInfo #productsSlider .slick-dots li:last-child img {
-  border-right: none;
+.productInfo #productsSlider .slick-dots li:first-child {
+  border-left: none;
 }
 
 .productInfo #productsSlider .slick-dots li img {
