@@ -61,7 +61,6 @@ $dcGold: #ffd54f;
     img {
       width: 200px;
       height: 69px;
-      margin: 0 auto !important;
     }
     h1 {
       width: 95%;
@@ -101,26 +100,14 @@ $dcGold: #ffd54f;
 .info {
   background-color: rgba(255, 255, 255, .8);
   width: 85%;
-  padding: 10px;
+  padding-bottom: 90px;
   margin: -170px auto 40px auto;
   box-shadow: -1px -1px 15px 3px rgba(196,196,196,0.6);
 
   .info-border {
-    position: relative;
-    margin: 10px 20px;
-    padding-bottom: 40px;
-    border: 2px solid $dcGold;
-
-    &:before {
-      content: ' ';
-      position: absolute;
-      z-index: 10;
-      top: 10px;
-      left: -15px;
-      right: -15px;
-      bottom: 10px;
-      border: 2px solid $dcGold;
-    }
+    margin: 0 auto;
+    height: 20px;
+    padding: 10px;
   } // info-border
   .info-whatIs {
     text-align: center;
@@ -171,15 +158,21 @@ $dcGold: #ffd54f;
     align-items: flex-start;
     text-align: center;
 
-    .drop {
-      width: 30px;
-      // display: inline-block;
-      margin: 0 auto 10px auto !important;
+    svg {
+      display: inline-block;
+      margin: 0 auto 10px auto;
+
+      path {
+        fill: $dcGold;
+      } // path
+      .blue {
+        fill: $dcBlue;
+      }
     }
     p {
       margin-left: auto;
       margin-right: auto;
-      width: 78%;
+      width: 75%;
       display: inline-block;
       font-size: 16px;
 
@@ -293,34 +286,21 @@ $dcGold: #ffd54f;
   // margin-top: -75px;
   // padding: 100px 0;
   text-align: center;
-  #setsCarousel {
-    width: 90%;
 
-    .slick-track {
-      width: 100% !important;
-      margin: 0 auto;
-    }
-    .slick-slide {
-      width: 100% !important;
-    }
-    .product-item {
-      width: 200px;
-    }
-    .widget .block-products-list .add-button {
-      font-weight: 400;
-      // background: $blue700;
-      // border: 1px solid $blue700;
-      // color: #fff;
-      // padding: 10px 20px;
-      // margin-top: 20px;
-      //
-      // &:hover {
-      //   background: lighten($blue700, 20%);
-      //   border: 1px solid $blue700;
-      //   color: #fff;
-      // }
-    }
-  } // setsCarousel
+  .widget .block-products-list .add-button {
+    font-weight: 400;
+    // background: $blue700;
+    // border: 1px solid $blue700;
+    // color: #fff;
+    // padding: 10px 20px;
+    // margin-top: 20px;
+    //
+    // &:hover {
+    //   background: lighten($blue700, 20%);
+    //   border: 1px solid $blue700;
+    //   color: #fff;
+    // }
+  }
 } // carousel
 .blog {
   height: 600px;

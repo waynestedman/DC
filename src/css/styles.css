@@ -208,7 +208,7 @@ body {
 }
 
 .hero {
-  background-image: url("../../images/dc-hero.jpg");
+  background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-hero.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 500px;
@@ -223,6 +223,7 @@ body {
 .hero .hero-text img {
   width: 200px;
   height: 69px;
+  margin: 0 auto !important;
 }
 
 .hero .hero-text h1 {
@@ -231,7 +232,7 @@ body {
 }
 
 .history {
-  background-image: url("../../images/dc-intro.jpg");
+  background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-intro.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: top left;
@@ -246,7 +247,7 @@ body {
 }
 
 .history .history-text .history-upperDivider {
-  background-image: url("../../images/3-drops.svg");
+  background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg");
   background-repeat: repeat-x;
   width: 408px;
   height: 30px;
@@ -254,7 +255,7 @@ body {
 }
 
 .history .history-text .history-lowerDivider {
-  background-image: url("../../images/3-drops.svg");
+  background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg");
   background-repeat: repeat-x;
   width: 135px;
   height: 30px;
@@ -264,15 +265,27 @@ body {
 .info {
   background-color: rgba(255, 255, 255, 0.8);
   width: 85%;
-  padding-bottom: 90px;
+  padding: 10px;
   margin: -170px auto 40px auto;
   box-shadow: -1px -1px 15px 3px rgba(196, 196, 196, 0.6);
 }
 
 .info .info-border {
-  margin: 0 auto;
-  height: 20px;
-  padding: 10px;
+  position: relative;
+  margin: 10px 20px;
+  padding-bottom: 40px;
+  border: 2px solid #ffd54f;
+}
+
+.info .info-border:before {
+  content: ' ';
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  left: -15px;
+  right: -15px;
+  bottom: 10px;
+  border: 2px solid #ffd54f;
 }
 
 .info .info-whatIs {
@@ -328,23 +341,15 @@ body {
   text-align: center;
 }
 
-.info .benefit svg {
-  display: inline-block;
-  margin: 0 auto 10px auto;
-}
-
-.info .benefit svg path {
-  fill: #ffd54f;
-}
-
-.info .benefit svg .blue {
-  fill: #00388d;
+.info .benefit .drop {
+  width: 30px;
+  margin: 0 auto 10px auto !important;
 }
 
 .info .benefit p {
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 78%;
   display: inline-block;
   font-size: 16px;
 }
@@ -464,7 +469,24 @@ body {
   text-align: center;
 }
 
-.carousel .widget .block-products-list .add-button {
+.carousel #setsCarousel {
+  width: 90%;
+}
+
+.carousel #setsCarousel .slick-track {
+  width: 100% !important;
+  margin: 0 auto;
+}
+
+.carousel #setsCarousel .slick-slide {
+  width: 100% !important;
+}
+
+.carousel #setsCarousel .product-item {
+  width: 200px;
+}
+
+.carousel #setsCarousel .widget .block-products-list .add-button {
   font-weight: 400;
 }
 

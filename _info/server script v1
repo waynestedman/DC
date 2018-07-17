@@ -1,3 +1,8 @@
+<script type="text/javascript" xml="space">// <![CDATA[
+require([
+  'jquery',
+  'slick'
+  ], function ($) {
 $(document).ready(function(){
   $("#productsSlider").slick({
     arrows: false,
@@ -13,7 +18,7 @@ $(document).ready(function(){
         var thumbnail = $(slider.$slides[i]).data("thumbnail");
         return '<a href="javascript:void(0)"><img src="'+thumbnail+'" class="img-wrapper"></a>'}
   });
-  $('#setsCarousel').slick({
+ $('#setsCarousel').slick({
     dots: false,
     infinite: true,
     speed: 600,
@@ -45,4 +50,11 @@ $(document).ready(function(){
       }
     ]
   });
-});
+//  $('#openVideo').on('click', function(e) {
+//        e.preventDefault();
+//        videoModal.modal('openModal');
+//       $("#simple-iframe").attr('src', "https://fast.wistia.net/embed/iframe/ozmj3dq5tp?videoFoam=true&autoplay=1");
+//      });
+    });
+  });
+// ]]></script>
