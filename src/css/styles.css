@@ -208,16 +208,23 @@ body {
 }
 
 .hero {
-  background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-hero.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 500px;
+  height: 100%;
+}
+
+.hero .hero-img {
+  width: 100%;
+  float: left;
+}
+
+.hero .hero-img img {
+  max-width: 1280px;
 }
 
 .hero .hero-text {
   text-align: center;
-  padding-left: 58%;
-  padding-top: 10%;
+  padding-top: 7%;
+  padding-left: 34%;
+  position: absolute;
 }
 
 .hero .hero-text img {
@@ -236,17 +243,24 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: top left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 4%;
   height: 750px;
 }
 
-.history .history-text {
+.history .history-img {
+  display: none;
+}
+
+.history .history-upper, .history .history-lower {
   text-align: center;
   padding-left: 30%;
-  padding-top: 4%;
   width: 75%;
 }
 
-.history .history-text .history-upperDivider {
+.history .history-upperDivider {
   background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg");
   background-repeat: repeat-x;
   width: 408px;
@@ -254,7 +268,7 @@ body {
   margin: 0 auto 40px auto;
 }
 
-.history .history-text .history-lowerDivider {
+.history .history-lowerDivider {
   background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg");
   background-repeat: repeat-x;
   width: 135px;
@@ -267,6 +281,7 @@ body {
   width: 85%;
   padding: 10px;
   margin: -170px auto 40px auto;
+  z-index: 10;
   box-shadow: -1px -1px 15px 3px rgba(196, 196, 196, 0.6);
 }
 
@@ -363,12 +378,14 @@ body {
 .info .video {
   width: 80%;
   margin: 20px auto 0 auto;
+  cursor: pointer;
 }
 
 .info .video .video-thumbnail {
   max-width: 1068px;
   max-height: 150px;
   margin: 0 auto;
+  z-index: 100;
   position: relative;
 }
 
@@ -466,11 +483,13 @@ body {
 }
 
 .carousel {
+  margin: 40px auto;
   text-align: center;
 }
 
 .carousel #setsCarousel {
   width: 90%;
+  margin: 0 auto;
 }
 
 .carousel #setsCarousel .slick-track {
@@ -526,36 +545,295 @@ body {
   float: right;
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 1024px) {
   .cms-page-view .column.main p {
     margin: 0 auto 10px auto;
   }
   .content-wrapper h1 {
-    font-size: 45px;
+    font-size: 50px;
   }
   .content-wrapper h2 {
     font-size: 45px;
   }
-  .content-wrapper h3 {
-    font-size: 39px;
+  .content-wrapper .sectionDivider {
+    width: 97%;
   }
-  .content-wrapper h4 {
-    font-size: 30px;
+  .content-wrapper .slick-list {
+    margin-left: 0;
   }
-  .content-wrapper h6 {
+  .hero {
+    text-align: center;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .hero .hero-img {
+    float: none;
+  }
+  .hero .hero-img img {
+    max-width: 500px;
+    max-height: 420px;
+  }
+  .hero .hero-text {
+    position: relative;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .hero-text h1 {
+    width: 100%;
+    font-size: 40px;
+  }
+  .history {
+    background: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .history .history-img {
+    display: block;
+    order: 2;
+  }
+  .history .history-img img {
+    max-width: 450px;
+    width: 100%;
+  }
+  .history .history-upper, .history .history-lower {
+    padding: 8px;
+    width: 100%;
+  }
+  .history .history-upper {
+    order: 1;
+  }
+  .history .history-lower {
+    order: 3;
+  }
+  .info {
+    margin: 220px auto 0 auto;
+    width: 95%;
+  }
+  .info .info-whatIs {
+    width: 95%;
+  }
+  .info .info-whatIs h2 {
+    font-size: 36px;
+    width: 100%;
+  }
+  .info .stepsIcon {
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+  }
+  .info .stepsIcon .step1 {
+    order: 2;
+    margin: 0 auto;
+    width: 95%;
+  }
+  .info .stepsIcon .step2 {
+    order: 3;
+    margin: 0 auto;
+    width: 95%;
+  }
+  .info .stepsIcon .info-icon {
+    order: 1;
+    margin: 0 auto;
+  }
+  .info .benefits {
+    width: 100%;
+    flex-direction: column;
+  }
+  .info .benefits .benefit {
+    width: 100%;
+  }
+  .info .video {
+    width: 95%;
+  }
+  .info .video .video-text {
+    left: 10px !important;
+  }
+  .info .video .video-text .video-button {
+    margin-right: 10px !important;
+  }
+  .info .video .video-text h5 {
     font-size: 18px;
   }
-  .content-wrapper p {
-    font-size: 15px;
+  .products .productDetails {
+    flex-wrap: wrap;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .content-wrapper a {
-    color: #00388d;
+  .products .productDetails .product {
+    width: 50%;
+  }
+  .products .productDetails .product .psn-btn {
+    padding: 6px;
+  }
+  .products .productDetails .product .dc-cta, .products .productDetails .product .psn-cta {
+    display: block;
+    margin: 40px 0;
+  }
+  .products .productDetails .product h3 {
+    font-size: 63px;
+  }
+  .products .productDetails .product h3 span {
+    font-size: 27px;
+  }
+  .products .productDetails .product h5 {
+    font-size: 20px;
+  }
+  .products .productDetails .product .psn-icon {
+    height: 212px;
+    margin-top: 14px;
+    margin-bottom: 37px;
+  }
+  .products .productDetails .product img {
+    width: 75px;
+  }
+  .products .productsCTA {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .products .productsCTA .productsCTA-1 {
+    display: none;
+  }
+  .products .productsCTA .productsCTA-2 {
+    width: 100%;
+  }
+  .products .productsCTA .productsCTA-2 .psn-btn {
+    padding: 6px 40px;
+  }
+  .toners {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0;
+    height: 300px;
+  }
+  .toners .toners-text {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .toners .toners-text h5 {
+    width: 52%;
+    font-size: 20px;
+    margin: 0 auto 10px auto;
+  }
+  .toners .toners-img {
+    height: 284px;
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
-  .content-wrapper a {
-    color: #00388d;
+@media only screen and (min-width: 650px) and (max-width: 1024px) {
+  .content-wrapper h1 {
+    font-size: 60px;
+  }
+  .content-wrapper h2 {
+    font-size: 50px;
+  }
+  .content-wrapper h3 {
+    font-size: 35px;
+  }
+  .content-wrapper h4 {
+    font-size: 40px;
+  }
+  .content-wrapper h5 {
+    font-size: 30px;
+  }
+  .content-wrapper h6 {
+    font-size: 20px;
+  }
+  .content-wrapper p {
+    font-size: 18px;
+  }
+  .content-wrapper .psn-btn {
+    font-size: 19px;
+  }
+  .content-wrapper .sectionDivider {
+    width: 97%;
+  }
+  .hero {
+    text-align: center;
+  }
+  .hero .hero-img {
+    width: 100%;
+    height: inherit;
+    float: none;
+  }
+  .hero .heroDetails {
+    position: relative;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -160px;
+    width: 100%;
+  }
+  .hero .heroDetails h1 {
+    width: 100%;
+    line-height: 1.1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .heroDetails h3 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .heroDetails h6 {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .info .infoDetails-platinum .info-img, .info .infoDetails-silver .info-img {
+    width: 66%;
+  }
+  .info .infoDetails-platinum ul li, .info .infoDetails-silver ul li {
+    font-size: 18px;
+  }
+  .info #ingredientsDesc .ingredient-text .ingredient-prop {
+    font-size: 18px;
+  }
+  .info #ingredientsSlider .slick-active {
+    width: 4.5% !important;
+  }
+  .toners {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0;
+    height: 740px;
+  }
+  .toners .toners-text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .toners .toners-text h5 {
+    font-size: 17px;
+  }
+  .toners .toners-text p {
+    font-size: 18px;
+  }
+  .toners .toners-img {
+    height: 370px;
+  }
+}
+
+@media only screen and (min-width: 830px) and (max-width: 1024px) {
+  .infoIntro h2 {
+    width: 730px !important;
+  }
+  .products .productDetails .product .dc-cta {
+    margin-top: 40px;
+  }
+  .toners {
+    height: 860px;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 424px) {
+  .products .productDetails .product .dc-cta {
+    margin-top: 60px;
   }
 }
 

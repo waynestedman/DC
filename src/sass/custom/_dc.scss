@@ -48,16 +48,21 @@ $dcGold: #ffd54f;
   }
 }
 .hero {
-  background-image: url('https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-hero.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 500px;
+  height: 100%;
 
+  .hero-img {
+    width: 100%;
+    float: left;
+
+    img {
+      max-width: 1280px;
+    }
+  }
   .hero-text {
     text-align: center;
-    padding-left: 58%;
-    padding-top: 10%;
-
+    padding-top: 7%;
+    padding-left: 34%;
+    position: absolute;
     img {
       width: 200px;
       height: 69px;
@@ -74,35 +79,41 @@ $dcGold: #ffd54f;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: top left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 4%;
   height: 750px;
 
-  .history-text {
+  .history-img {
+    display: none;
+  }
+  .history-upper, .history-lower {
     text-align: center;
     padding-left: 30%;
-    padding-top: 4%;
     width: 75%;
-
-    .history-upperDivider {
-      background-image: url('https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg');
-      background-repeat: repeat-x;
-      width: 408px;
-      height: 30px;
-      margin: 0 auto 40px auto;
-    } // history-upperDivider
-    .history-lowerDivider {
-      background-image: url('https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg');
-      background-repeat: repeat-x;
-      width: 135px;
-      height: 30px;
-      margin: 40px auto;
-    } // history-lowerDivider
-  } // history-text
+  } // history-upper -lower
+  .history-upperDivider {
+    background-image: url('https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg');
+    background-repeat: repeat-x;
+    width: 408px;
+    height: 30px;
+    margin: 0 auto 40px auto;
+  } // history-upperDivider
+  .history-lowerDivider {
+    background-image: url('https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg');
+    background-repeat: repeat-x;
+    width: 135px;
+    height: 30px;
+    margin: 40px auto;
+  } // history-lowerDivider
 } // history
 .info {
   background-color: rgba(255, 255, 255, .8);
   width: 85%;
   padding: 10px;
   margin: -170px auto 40px auto;
+  z-index: 10;
   box-shadow: -1px -1px 15px 3px rgba(196,196,196,0.6);
 
   .info-border {
@@ -193,12 +204,14 @@ $dcGold: #ffd54f;
   .video {
     width: 80%;
     margin: 20px auto 0 auto;
+    cursor: pointer;
     // @include clearfix;
 
     .video-thumbnail {
       max-width: 1068px;
       max-height: 150px;
       margin: 0 auto;
+      z-index: 100;
       position: relative;
 
       .video-text {
@@ -290,11 +303,12 @@ $dcGold: #ffd54f;
   } // #productsSlider
 } // productInfo
 .carousel {
-  // margin-top: -75px;
-  // padding: 100px 0;
+  margin: 40px auto;
   text-align: center;
+
   #setsCarousel {
     width: 90%;
+    margin: 0 auto;
 
     .slick-track {
       width: 100% !important;
