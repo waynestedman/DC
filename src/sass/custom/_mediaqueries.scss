@@ -54,6 +54,7 @@
     .hero-text {
       position: relative;
       padding: 0;
+      margin-top: 16px;
       margin-left: auto;
       margin-right: auto;
 
@@ -86,16 +87,29 @@
     }
     .history-upper {
       order: 1;
-    }
+
+      .history-upperDivider {
+        width: 180px;
+        height: 16px;
+      }
+    } // history-upper
     .history-lower {
       order: 3;
-    }
+
+      .history-lowerDivider {
+        width: 72px;
+        height: 16px;
+      }
+    } // history-lower
   } // history
 
   .info {
     margin: 220px auto 0 auto;
     width: 95%;
 
+    .info-border {
+      padding-bottom: 14px;
+    } // info-border
     .info-whatIs {
       width: 95%;
 
@@ -111,7 +125,7 @@
 
       .step1 {
         order: 2;
-        margin: 0 auto;
+        margin: 0 auto 10px auto;
         width: 95%;
       }
       .step2 {
@@ -121,7 +135,7 @@
       }
       .info-icon {
         order: 1;
-        margin: 0 auto;
+        margin: 0 auto 10px auto;
       }
     } // stepsIcon
     .benefits {
@@ -130,99 +144,88 @@
 
       .benefit {
         width: 100%;
+
+        .drop {
+          width: 19px;
+        }
       }
     } // benefits
     .video {
       width: 95%;
+      margin-bottom: 30px;
 
-      .video-text {
-        left: 10px !important;
+      .video-thumbnail {
+        .video-text {
+          left: 0;
+          top: 6px;
+          margin: 0 auto;
+          width: 100%;
 
-        .video-button {
-          margin-right: 10px !important;
-        }
-        h5 {
-          font-size: 18px;
-        }
-      }
-    }
+          .video-button {
+            margin-right: 0;
+            padding-top: 4px;
+          }
+          img {
+            width: 26px;
+          }
+          h5 {
+            font-size: 20px;
+          }
+        } // video-text
+      } // video-thumbnail
+    } // video
   } // info
-  .products {
-    .productDetails {
-      flex-wrap: wrap;
-      width: 95%;
-      margin-left: auto;
-      margin-right: auto;
+  .productInfo {
+    text-align: center;
+    padding-bottom: 40px;
 
-      .product {
-        width: 50%;
+    #productsSlider {
+      padding: 0;
 
-        .psn-btn {
-          padding: 6px;
+      img {
+        width: 150px;
+      }
+      .productInfo-details {
+        flex-direction: column;
+      }
+      .productInfo-text {
+        margin-left: 0;
+        width: 95%;
+
+        .productDesc-cta {
+          margin-bottom: 60px;
         }
-        .dc-cta, .psn-cta {
-          display: block;
-          margin: 40px 0;
-        }
-        h3 {
-          font-size: 63px;
+      } // productInfo-text
+      .slick-dots {
+        bottom: 0;
 
-          span {
-            font-size: 27px;
+        li {
+          height: 34px;
+          width: 50px;
+          padding: 0 8px;
+        } // li
+        .slick-active {
+          a {
+            padding-bottom: 0;
           }
         }
-        h5 {
-          font-size: 20px;
-        }
-        .psn-icon {
-          height: 212px;
-          margin-top: 14px;
-          margin-bottom: 37px;
-        }
-        img {
-          width: 75px;
-        }
-      } // product
-    } // productDetails
-    .productsCTA {
-      display: flex;
-      justify-content: space-evenly;
-
-      .productsCTA-1 {
-        display: none;
       }
-      .productsCTA-2 {
-        width: 100%;
+    } // #productsSlider
+  } // productInfo
+  .carousel {
+    h3 {
+      font-size: 28px;
+    }
+  } // carousel
+  .blog {
+    text-align: center;
 
-        .psn-btn {
-          padding: 6px 40px;
-        }
-      }
-    } // productsCTA
-  } // products
-  .toners {
-    background: rgba(255, 255, 255, 0.5);
-    padding: 0;
-    height: 300px;
-
-    .toners-text {
+    .blog-text {
       width: 100%;
       position: relative;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 20px;
-
-      h5 {
-        width: 52%;
-        font-size: 20px;
-        margin: 0 auto 10px auto;
-      }
-    }
-    .toners-img {
-      height: 284px;
-    }
-  } // toners
+      margin: 0 auto;
+    } // blog-text
+  } // blog
 } // Mobile & Tablet - everything smaller than 1024
 
 @media only screen and (min-width: 650px) and (max-width: 1024px) {
@@ -230,30 +233,24 @@
     h1 {
       font-size: 60px;
     }
-    h2 {
-      font-size: 50px;
-    }
-    h3 {
-      font-size: 35px;
-    }
-    h4 {
-      font-size: 40px;
-    }
-    h5 {
-      font-size: 30px;
-    }
-    h6 {
-      font-size: 20px;
-    }
-    p {
-      font-size: 18px;
-    }
-    .psn-btn {
-      font-size: 19px;
-    }
-    .sectionDivider {
-      width: 97%;
-    }
+    // h2 {
+    //   font-size: 50px;
+    // }
+    // h3 {
+    //   font-size: 35px;
+    // }
+    // h4 {
+    //   font-size: 40px;
+    // }
+    // h5 {
+    //   font-size: 30px;
+    // }
+    // h6 {
+    //   font-size: 20px;
+    // }
+    // p {
+    //   font-size: 18px;
+    // }
   } // content wrapper
   .hero {
     text-align: center;
@@ -313,55 +310,34 @@
       }
     }
   } // info
-  .toners {
-    background: rgba(255, 255, 255, 0.5);
-    padding: 0;
-    height: 740px;
-
-    .toners-text {
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-
-      h5 {
-        font-size: 17px;
-      }
-      p {
-        font-size: 18px;
-      }
-    }
-    .toners-img {
-      height: 370px;
-    }
-  } // toners
 } // min 650 to max 1024 - Tablet
-@media only screen and (min-width: 830px) and (max-width: 1024px) {
-  .infoIntro {
-    h2 {
-      width: 730px !important;
-    }
-  }
-  .products {
-    .productDetails {
-      .product {
-        .dc-cta {
-          margin-top: 40px;
-        }
-      }
-    } // productsCTA
-  } // products
-  .toners {
-    height: 860px;
-  } // toners
-}
-@media only screen and (min-width: 376px) and (max-width: 424px) {
-  .products {
-    .productDetails {
-      .product {
-        .dc-cta {
-          margin-top: 60px;
-        }
-      }
-    } // productsCTA
-  } // products
-} // min 376 to max 424 - Mobile exceptions
+// @media only screen and (min-width: 830px) and (max-width: 1024px) {
+//   .infoIntro {
+//     h2 {
+//       width: 730px !important;
+//     }
+//   }
+//   .products {
+//     .productDetails {
+//       .product {
+//         .dc-cta {
+//           margin-top: 40px;
+//         }
+//       }
+//     } // productsCTA
+//   } // products
+//   .toners {
+//     height: 860px;
+//   } // toners
+// }
+// @media only screen and (min-width: 376px) and (max-width: 424px) {
+//   .products {
+//     .productDetails {
+//       .product {
+//         .dc-cta {
+//           margin-top: 60px;
+//         }
+//       }
+//     } // productsCTA
+//   } // products
+// } // min 376 to max 424 - Mobile exceptions

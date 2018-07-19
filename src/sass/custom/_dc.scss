@@ -19,8 +19,10 @@ $dcGold: #ffd54f;
 
 .content-wrapper {
   h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
+    font-size: 68px;
+  }
+  h3 {
+    font-size: 24px;
   }
   // .dc-btn {
   //   position: absolute;
@@ -64,8 +66,8 @@ $dcGold: #ffd54f;
     padding-left: 34%;
     position: absolute;
     img {
-      width: 200px;
-      height: 69px;
+      width: 225px;
+      height: 78px;
       margin: 0 auto !important;
     }
     h1 {
@@ -96,15 +98,15 @@ $dcGold: #ffd54f;
   .history-upperDivider {
     background-image: url('https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg');
     background-repeat: repeat-x;
-    width: 408px;
-    height: 30px;
+    width: 325px;
+    height: 24px;
     margin: 0 auto 40px auto;
   } // history-upperDivider
   .history-lowerDivider {
     background-image: url('https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg');
     background-repeat: repeat-x;
-    width: 135px;
-    height: 30px;
+    width: 109px;
+    height: 24px;
     margin: 40px auto;
   } // history-lowerDivider
 } // history
@@ -119,13 +121,13 @@ $dcGold: #ffd54f;
   .info-border {
     position: relative;
     margin: 10px 20px;
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
     border: 2px solid $dcGold;
 
     &:before {
       content: ' ';
       position: absolute;
-      z-index: 10;
+      z-index: 2;
       top: 10px;
       left: -15px;
       right: -15px;
@@ -137,6 +139,7 @@ $dcGold: #ffd54f;
     text-align: center;
     width: 82%;
     margin: 40px auto 40px auto;
+    z-index: 97;
   }
   .stepsIcon {
     display: flex;
@@ -148,6 +151,7 @@ $dcGold: #ffd54f;
     // padding-bottom: 40px;
     margin: 0 auto 40px auto;
     text-align: center;
+    z-index: 98;
 
     .step1, .step2 {
       width: 40%;
@@ -156,13 +160,15 @@ $dcGold: #ffd54f;
         border-bottom: 1px solid $gray400;
         width: 70px;
         margin: 20px auto;
+        font-weight: 400;
+        padding-bottom: 10px;
       }
       p {
         margin: 0;
       }
     }
     .info-icon {
-      width: 28%;
+      width: 22%;
       margin: 0 40px;
     }
   } //stepsIcon
@@ -173,6 +179,7 @@ $dcGold: #ffd54f;
     justify-content: center;
     width: 85%;
     margin: 0 auto;
+    z-index: 99;
   }
   .benefit {
     width: 25%;
@@ -183,7 +190,7 @@ $dcGold: #ffd54f;
     text-align: center;
 
     .drop {
-      width: 30px;
+      width: 20px;
       // display: inline-block;
       margin: 0 auto 10px auto !important;
     }
@@ -203,40 +210,42 @@ $dcGold: #ffd54f;
   } // benefit
   .video {
     width: 80%;
-    margin: 20px auto 0 auto;
+    margin: 20px auto 50px auto;
     cursor: pointer;
     // @include clearfix;
 
     .video-thumbnail {
       max-width: 1068px;
-      max-height: 150px;
+      max-height: 140px;
       margin: 0 auto;
       z-index: 100;
       position: relative;
 
-      .video-text {
-        position: absolute;
-        top: 10px;
-        left: 40px;
-
-        .video-button {
-          margin-right: 20px;
-          width: 34px;
-          height: 34px;
-          vertical-align: middle;
-          display: inline-block;
-        } // video-button
-        img {
-          padding-top: 12px;
-          width: 40px;
+        .wistia_click_to_play {
+          display: inline-block !important;
         }
-        h5 {
-          display: inline-block;
-          vertical-align: middle;
-          color: #000000;
-        }
-      } // video-text
+        .video-text {
+          position: absolute;
+          top: 10px;
+          left: 40px;
 
+          .video-button {
+            margin-right: 20px;
+            width: 34px;
+            height: 34px;
+            vertical-align: middle;
+            display: inline-block;
+          } // video-button
+          img {
+            padding-top: 12px;
+            width: 40px;
+          }
+          h5 {
+            display: inline-block;
+            vertical-align: middle;
+            color: #000000;
+          }
+        } // video-text
     } // video-thumbnail
   } // video
 } // info
@@ -263,7 +272,7 @@ $dcGold: #ffd54f;
     .productInfo-text {
       display: inline-block;
       width: 50%;
-      margin-left: 32px;
+      margin-left: 58px;
 
       .productInfo-desc {
         margin: 20px 0;
@@ -279,12 +288,13 @@ $dcGold: #ffd54f;
     } // productInfo-text
     .slick-dots {
       bottom: -120px;
+      left: 0;
 
       li {
-        height: 86px;
-        width: 100px;
+        height: 75px;
+        width: 90px;
         padding-left: 14px;
-        border-left: 1px solid #222;
+        border-left: 1px solid $gray400;
 
         &:first-child {
           border-left: none;
@@ -361,7 +371,7 @@ $dcGold: #ffd54f;
       margin-bottom: 2rem;
     }
     a:hover {
-      color: #004098;
+      color: $dcBlue;
     } // a hover
   } // blog-text
   .blog-img {

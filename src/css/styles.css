@@ -195,8 +195,11 @@ body {
 }
 
 .content-wrapper h1 {
-  font-size: 60px;
-  margin-bottom: 20px;
+  font-size: 68px;
+}
+
+.content-wrapper h3 {
+  font-size: 24px;
 }
 
 .content-wrapper .slick-next, .content-wrapper .slick-arrow {
@@ -228,8 +231,8 @@ body {
 }
 
 .hero .hero-text img {
-  width: 200px;
-  height: 69px;
+  width: 225px;
+  height: 78px;
   margin: 0 auto !important;
 }
 
@@ -263,16 +266,16 @@ body {
 .history .history-upperDivider {
   background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg");
   background-repeat: repeat-x;
-  width: 408px;
-  height: 30px;
+  width: 325px;
+  height: 24px;
   margin: 0 auto 40px auto;
 }
 
 .history .history-lowerDivider {
   background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg");
   background-repeat: repeat-x;
-  width: 135px;
-  height: 30px;
+  width: 109px;
+  height: 24px;
   margin: 40px auto;
 }
 
@@ -288,14 +291,13 @@ body {
 .info .info-border {
   position: relative;
   margin: 10px 20px;
-  padding-bottom: 40px;
   border: 2px solid #ffd54f;
 }
 
 .info .info-border:before {
   content: ' ';
   position: absolute;
-  z-index: 10;
+  z-index: 2;
   top: 10px;
   left: -15px;
   right: -15px;
@@ -307,6 +309,7 @@ body {
   text-align: center;
   width: 82%;
   margin: 40px auto 40px auto;
+  z-index: 97;
 }
 
 .info .stepsIcon {
@@ -317,6 +320,7 @@ body {
   width: 82%;
   margin: 0 auto 40px auto;
   text-align: center;
+  z-index: 98;
 }
 
 .info .stepsIcon .step1, .info .stepsIcon .step2 {
@@ -327,6 +331,8 @@ body {
   border-bottom: 1px solid #BDBDBD;
   width: 70px;
   margin: 20px auto;
+  font-weight: 400;
+  padding-bottom: 10px;
 }
 
 .info .stepsIcon .step1 p, .info .stepsIcon .step2 p {
@@ -334,7 +340,7 @@ body {
 }
 
 .info .stepsIcon .info-icon {
-  width: 28%;
+  width: 22%;
   margin: 0 40px;
 }
 
@@ -345,6 +351,7 @@ body {
   justify-content: center;
   width: 85%;
   margin: 0 auto;
+  z-index: 99;
 }
 
 .info .benefit {
@@ -357,7 +364,7 @@ body {
 }
 
 .info .benefit .drop {
-  width: 30px;
+  width: 20px;
   margin: 0 auto 10px auto !important;
 }
 
@@ -377,16 +384,20 @@ body {
 
 .info .video {
   width: 80%;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 50px auto;
   cursor: pointer;
 }
 
 .info .video .video-thumbnail {
   max-width: 1068px;
-  max-height: 150px;
+  max-height: 140px;
   margin: 0 auto;
   z-index: 100;
   position: relative;
+}
+
+.info .video .video-thumbnail .wistia_click_to_play {
+  display: inline-block !important;
 }
 
 .info .video .video-thumbnail .video-text {
@@ -442,7 +453,7 @@ body {
 .productInfo #productsSlider .productInfo-text {
   display: inline-block;
   width: 50%;
-  margin-left: 32px;
+  margin-left: 58px;
 }
 
 .productInfo #productsSlider .productInfo-text .productInfo-desc {
@@ -460,13 +471,14 @@ body {
 
 .productInfo #productsSlider .slick-dots {
   bottom: -120px;
+  left: 0;
 }
 
 .productInfo #productsSlider .slick-dots li {
-  height: 86px;
-  width: 100px;
+  height: 75px;
+  width: 90px;
   padding-left: 14px;
-  border-left: 1px solid #222;
+  border-left: 1px solid #BDBDBD;
 }
 
 .productInfo #productsSlider .slick-dots li:first-child {
@@ -531,7 +543,7 @@ body {
 }
 
 .blog .blog-text a:hover {
-  color: #004098;
+  color: #00388d;
 }
 
 .blog .blog-img {
@@ -578,6 +590,7 @@ body {
   .hero .hero-text {
     position: relative;
     padding: 0;
+    margin-top: 16px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -605,12 +618,23 @@ body {
   .history .history-upper {
     order: 1;
   }
+  .history .history-upper .history-upperDivider {
+    width: 180px;
+    height: 16px;
+  }
   .history .history-lower {
     order: 3;
+  }
+  .history .history-lower .history-lowerDivider {
+    width: 72px;
+    height: 16px;
   }
   .info {
     margin: 220px auto 0 auto;
     width: 95%;
+  }
+  .info .info-border {
+    padding-bottom: 14px;
   }
   .info .info-whatIs {
     width: 95%;
@@ -626,7 +650,7 @@ body {
   }
   .info .stepsIcon .step1 {
     order: 2;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
     width: 95%;
   }
   .info .stepsIcon .step2 {
@@ -636,7 +660,7 @@ body {
   }
   .info .stepsIcon .info-icon {
     order: 1;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
   }
   .info .benefits {
     width: 100%;
@@ -645,114 +669,76 @@ body {
   .info .benefits .benefit {
     width: 100%;
   }
+  .info .benefits .benefit .drop {
+    width: 19px;
+  }
   .info .video {
     width: 95%;
+    margin-bottom: 30px;
   }
-  .info .video .video-text {
-    left: 10px !important;
-  }
-  .info .video .video-text .video-button {
-    margin-right: 10px !important;
-  }
-  .info .video .video-text h5 {
-    font-size: 18px;
-  }
-  .products .productDetails {
-    flex-wrap: wrap;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .products .productDetails .product {
-    width: 50%;
-  }
-  .products .productDetails .product .psn-btn {
-    padding: 6px;
-  }
-  .products .productDetails .product .dc-cta, .products .productDetails .product .psn-cta {
-    display: block;
-    margin: 40px 0;
-  }
-  .products .productDetails .product h3 {
-    font-size: 63px;
-  }
-  .products .productDetails .product h3 span {
-    font-size: 27px;
-  }
-  .products .productDetails .product h5 {
-    font-size: 20px;
-  }
-  .products .productDetails .product .psn-icon {
-    height: 212px;
-    margin-top: 14px;
-    margin-bottom: 37px;
-  }
-  .products .productDetails .product img {
-    width: 75px;
-  }
-  .products .productsCTA {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .products .productsCTA .productsCTA-1 {
-    display: none;
-  }
-  .products .productsCTA .productsCTA-2 {
+  .info .video .video-thumbnail .video-text {
+    left: 0;
+    top: 6px;
+    margin: 0 auto;
     width: 100%;
   }
-  .products .productsCTA .productsCTA-2 .psn-btn {
-    padding: 6px 40px;
+  .info .video .video-thumbnail .video-text .video-button {
+    margin-right: 0;
+    padding-top: 4px;
   }
-  .toners {
-    background: rgba(255, 255, 255, 0.5);
+  .info .video .video-thumbnail .video-text img {
+    width: 26px;
+  }
+  .info .video .video-thumbnail .video-text h5 {
+    font-size: 20px;
+  }
+  .productInfo {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .productInfo #productsSlider {
     padding: 0;
-    height: 300px;
   }
-  .toners .toners-text {
+  .productInfo #productsSlider img {
+    width: 150px;
+  }
+  .productInfo #productsSlider .productInfo-details {
+    flex-direction: column;
+  }
+  .productInfo #productsSlider .productInfo-text {
+    margin-left: 0;
+    width: 95%;
+  }
+  .productInfo #productsSlider .productInfo-text .productDesc-cta {
+    margin-bottom: 60px;
+  }
+  .productInfo #productsSlider .slick-dots {
+    bottom: 0;
+  }
+  .productInfo #productsSlider .slick-dots li {
+    height: 34px;
+    width: 50px;
+    padding: 0 8px;
+  }
+  .productInfo #productsSlider .slick-dots .slick-active a {
+    padding-bottom: 0;
+  }
+  .carousel h3 {
+    font-size: 28px;
+  }
+  .blog {
+    text-align: center;
+  }
+  .blog .blog-text {
     width: 100%;
     position: relative;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-  }
-  .toners .toners-text h5 {
-    width: 52%;
-    font-size: 20px;
-    margin: 0 auto 10px auto;
-  }
-  .toners .toners-img {
-    height: 284px;
+    margin: 0 auto;
   }
 }
 
 @media only screen and (min-width: 650px) and (max-width: 1024px) {
   .content-wrapper h1 {
     font-size: 60px;
-  }
-  .content-wrapper h2 {
-    font-size: 50px;
-  }
-  .content-wrapper h3 {
-    font-size: 35px;
-  }
-  .content-wrapper h4 {
-    font-size: 40px;
-  }
-  .content-wrapper h5 {
-    font-size: 30px;
-  }
-  .content-wrapper h6 {
-    font-size: 20px;
-  }
-  .content-wrapper p {
-    font-size: 18px;
-  }
-  .content-wrapper .psn-btn {
-    font-size: 19px;
-  }
-  .content-wrapper .sectionDivider {
-    width: 97%;
   }
   .hero {
     text-align: center;
@@ -797,43 +783,6 @@ body {
   }
   .info #ingredientsSlider .slick-active {
     width: 4.5% !important;
-  }
-  .toners {
-    background: rgba(255, 255, 255, 0.5);
-    padding: 0;
-    height: 740px;
-  }
-  .toners .toners-text {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
-  .toners .toners-text h5 {
-    font-size: 17px;
-  }
-  .toners .toners-text p {
-    font-size: 18px;
-  }
-  .toners .toners-img {
-    height: 370px;
-  }
-}
-
-@media only screen and (min-width: 830px) and (max-width: 1024px) {
-  .infoIntro h2 {
-    width: 730px !important;
-  }
-  .products .productDetails .product .dc-cta {
-    margin-top: 40px;
-  }
-  .toners {
-    height: 860px;
-  }
-}
-
-@media only screen and (min-width: 376px) and (max-width: 424px) {
-  .products .productDetails .product .dc-cta {
-    margin-top: 60px;
   }
 }
 
