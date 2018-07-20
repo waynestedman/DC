@@ -837,9 +837,6 @@ body {
 }
 
 @media only screen and (min-width: 650px) and (max-width: 1024px) {
-  .content-wrapper h1 {
-    font-size: 68px;
-  }
   .content-wrapper .one {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
@@ -877,6 +874,7 @@ body {
     padding: 7% 0 0 40%;
   }
   .hero .hero-text h1 {
+    font-size: 68px;
     width: 80%;
   }
   .history {
@@ -1011,11 +1009,16 @@ body {
 }
 
 @media only screen and (min-width: 830px) and (max-width: 1024px) {
+  .hero .hero-text h1 {
+    width: 80%;
+    font-size: 68px;
+  }
   .history .history-img {
     left: -14px;
   }
   .history .history-img img {
     margin-left: -160px;
+    margin-top: -25px;
     width: 740px;
     max-width: 500px;
   }

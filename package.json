@@ -1,7 +1,7 @@
 {
-  "name": "collagen-mist",
+  "name": "double-cleanse",
   "version": "1.0.1",
-  "description": "Super Collagen Mist page",
+  "description": "Double Cleanse Sets",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,7 +24,7 @@
   },
   "keywords": [
     "DHC",
-    "collagen",
-    "mist"
+    "double",
+    "cleanse"
   ]
 }
