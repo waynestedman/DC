@@ -676,6 +676,7 @@ body {
   }
   .info .stepsIcon .info-icon img {
     width: 100px;
+    margin: 0 auto;
   }
   .info .benefits {
     width: 100%;

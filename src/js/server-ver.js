@@ -1,12 +1,10 @@
 <script type="text/javascript" xml="space">// <![CDATA[
 require([
   'jquery',
-  'slick',
-  'Magento_Ui/js/modal/modal'
+  'slick'
   ], function ($) {
-$(document).ready(function(){
-  var videoModal = $('#video').modal();
-  $("#productsSlider").slick({
+jQuery(document).ready(function(){
+  jQuery("#productsSlider").slick({
     arrows: false,
     autoplay: false,
     autoplaySpeed: 4000,
@@ -20,43 +18,42 @@ $(document).ready(function(){
         var thumbnail = $(slider.$slides[i]).data("thumbnail");
         return '<a href="javascript:void(0)"><img src="'+thumbnail+'" class="img-wrapper"></a>'}
   });
- $('#setsCarousel').slick({
+ jQuery(".widget-product-grid").slick({
     dots: false,
+    arrows: false,
+    speed: 1000,
     infinite: true,
-   speed: 600,
     slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToScroll: 4,
     responsive: [
       {
-        breakpoint: 1280,
+        breakpoint: 1025,
         settings: {
-          slidesToShow: 5,
-          slidesToScroll: 5,
+          arrows: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: true,
           dots: false
         }
       },
       {
-        breakpoint: 1024,
+        breakpoint: 830,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3
+          arrows: true,
+          slidesToShow: 2,
+          slidesToScroll: 2
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 500,
         settings: {
+          arrows: true,
           slidesToShow: 1,
           slidesToScroll: 1
         }
       }
     ]
   });
-  $('#openVideo').on('click', function(e) {
-        e.preventDefault();
-        videoModal.modal('openModal');
-      $("#simple-iframe").attr('src', "https://fast.wistia.net/embed/iframe/s0w5d5rgpa?videoFoam=true&autoplay=1");
-      });
-    });
-  });
+ });
+});
 // ]]></script>
