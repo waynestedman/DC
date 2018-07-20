@@ -823,7 +823,7 @@ body {
 
 @media only screen and (min-width: 650px) and (max-width: 1024px) {
   .content-wrapper h1 {
-    font-size: 60px;
+    font-size: 68px;
   }
   .hero {
     text-align: center;
@@ -831,40 +831,57 @@ body {
   .hero .hero-img {
     width: 100%;
     height: inherit;
-    float: none;
+    float: left;
   }
-  .hero .heroDetails {
-    position: relative;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -160px;
-    width: 100%;
+  .hero .hero-img img {
+    max-width: 100%;
+    max-height: 100%;
   }
-  .hero .heroDetails h1 {
-    width: 100%;
-    line-height: 1.1;
-    margin-left: auto;
-    margin-right: auto;
+  .hero .hero-text {
+    position: absolute;
+    padding: 7% 0 0 40%;
   }
-  .hero .heroDetails h3 {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  .hero .hero-text h1 {
+    width: 80%;
   }
-  .hero .heroDetails h6 {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+  .history {
+    display: inline-block;
   }
-  .info .infoDetails-platinum .info-img, .info .infoDetails-silver .info-img {
-    width: 66%;
+  .history .history-img {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 378px;
+    height: 360px;
+    display: inline-block;
   }
-  .info .infoDetails-platinum ul li, .info .infoDetails-silver ul li {
-    font-size: 18px;
+  .history .history-img img {
+    margin-left: -160px;
+    width: 740px;
   }
-  .info #ingredientsDesc .ingredient-text .ingredient-prop {
-    font-size: 18px;
+  .history .history-upper {
+    text-align: left;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 50%;
+    float: right;
+  }
+  .history .history-upper .history-upperDivider {
+    width: 300px;
+    height: 22px;
+  }
+  .history .history-lower {
+    text-align: left;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    width: 50%;
+    float: right;
+  }
+  .history .history-lower .history-lowerDivider {
+    width: 100px;
+    height: 22px;
   }
   .info #ingredientsSlider .slick-active {
     width: 4.5% !important;

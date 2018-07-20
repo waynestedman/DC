@@ -231,7 +231,7 @@
 @media only screen and (min-width: 650px) and (max-width: 1024px) {
   .content-wrapper {
     h1 {
-      font-size: 60px;
+      font-size: 68px;
     }
     // h2 {
     //   font-size: 50px;
@@ -258,52 +258,65 @@
     .hero-img {
       width: 100%;
       height: inherit;
-      float: none;
+      float: left;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
     } // hero-img
-    .heroDetails {
-      position: relative;
-      padding: 0;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: -160px;
-      width: 100%;
+    .hero-text {
+      position: absolute;
+      padding: 7% 0 0 40%;
 
       h1 {
-        width: 100%;
-        line-height: 1.1;
-        margin-left: auto;
-        margin-right: auto;
+        width: 80%;
       }
-      h3 {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      h6 {
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    } // heroDetails
+    } // hero-text
   } // hero
+  .history {
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: flex-end;
+    // align-items: flex-end;
+    display: inline-block;
+
+    .history-img {
+      order: 1;
+      width: 378px;
+      height: 360px;
+      display: inline-block;
+
+      img {
+        margin-left: -160px;
+        width: 740px;
+      }
+    }
+    .history-upper {
+      text-align: left;
+      order: 2;
+      width: 50%;
+      float: right;
+
+      .history-upperDivider {
+        width: 300px;
+        height: 22px;
+      }
+    } // history-upper
+    .history-lower {
+      text-align: left;
+      order: 3;
+      width: 50%;
+      float: right;
+
+      .history-lowerDivider {
+        width: 100px;
+        height: 22px;
+      }
+    } // history-lower
+  } // history
+
   .info {
-    .infoDetails-platinum, .infoDetails-silver {
-      .info-img {
-        width: 66%;
-      }
-      ul {
-        li {
-          font-size: 18px;
-        }
-      }
-    } // infoDetails platinum & silver
-    #ingredientsDesc {
-      .ingredient-text {
-        .ingredient-prop {
-          font-size: 18px;
-        }
-      } // ingredient-text
-    } // #ingredientsDesc
     #ingredientsSlider {
       .slick-active {
         width: 4.5% !important;
