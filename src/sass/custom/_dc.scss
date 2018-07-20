@@ -23,6 +23,7 @@ $dcGold: #ffd54f;
   }
   h3 {
     font-size: 24px;
+    font-weight: 400;
   }
   // .dc-btn {
   //   position: absolute;
@@ -42,6 +43,7 @@ $dcGold: #ffd54f;
   //     color: #fff;
   //   }
   // }
+
   .slick-next, .slick-arrow {
     border: none;
   }
@@ -154,7 +156,7 @@ $dcGold: #ffd54f;
     z-index: 98;
 
     .step1, .step2 {
-      width: 40%;
+      width: 80%;
 
       h6 {
         border-bottom: 1px solid $gray400;
@@ -168,8 +170,12 @@ $dcGold: #ffd54f;
       }
     }
     .info-icon {
-      width: 22%;
+      width: 50%;
       margin: 0 40px;
+
+      img {
+        width: 164px;
+      }
     }
   } //stepsIcon
   .benefits {
@@ -316,6 +322,10 @@ $dcGold: #ffd54f;
   margin: 40px auto;
   text-align: center;
 
+  h3 {
+    font-weight: 400;
+    font-size: 33px;
+  }
   #setsCarousel {
     width: 90%;
     margin: 0 auto;

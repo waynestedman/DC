@@ -73,6 +73,7 @@
 
     .history-img {
       display: block;
+      margin: 0 auto;
       // width: 100%;
       order: 2;
 
@@ -136,6 +137,11 @@
       .info-icon {
         order: 1;
         margin: 0 auto 10px auto;
+        width: 100%;
+
+        img {
+          width: 100px;
+        }
       }
     } // stepsIcon
     .benefits {
@@ -200,9 +206,9 @@
         bottom: 0;
 
         li {
-          height: 34px;
+          height: 44px;
           width: 50px;
-          padding: 0 8px;
+          padding-left: 8px;
         } // li
         .slick-active {
           a {
@@ -251,6 +257,18 @@
     // p {
     //   font-size: 18px;
     // }
+    .one {
+      order: 1;
+    }
+    .two {
+      order: 2;
+    }
+    .three {
+      order: 3;
+    }
+    .four {
+      order: 4;
+    }
   } // content wrapper
   .hero {
     text-align: center;
@@ -275,39 +293,43 @@
     } // hero-text
   } // hero
   .history {
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    // justify-content: flex-end;
-    // align-items: flex-end;
+    height: auto;
     display: inline-block;
+
 
     .history-img {
       order: 1;
-      width: 378px;
-      height: 360px;
+      width: 40%;
+      // height: 360px;
       display: inline-block;
+      position: absolute;
+      left: -140px;
 
       img {
-        margin-left: -160px;
+        // margin-left: -160px;
         width: 740px;
+        max-width: 400px;
       }
     }
     .history-upper {
       text-align: left;
       order: 2;
-      width: 50%;
+      width: 60%;
       float: right;
+      position: relative;
 
       .history-upperDivider {
         width: 300px;
         height: 22px;
+        // margin-left: -22px;
       }
     } // history-upper
     .history-lower {
       text-align: left;
       order: 3;
-      width: 50%;
+      width: 60%;
       float: right;
+      position: relative;
 
       .history-lowerDivider {
         width: 100px;
@@ -317,32 +339,123 @@
   } // history
 
   .info {
-    #ingredientsSlider {
-      .slick-active {
-        width: 4.5% !important;
+    margin: 0 auto;
+
+    .stepsIcon {
+      flex-wrap: wrap;
+      flex-direction: row;
+
+      .step1, .step2 {
+        width: 44%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    } // stepsIcon
+    .benefits {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .benefit {
+        width: 50%;
+      } // benefit
+    } // benefits
+    .video {
+      .video-thumbnail {
+        .video-text {
+          left: 20px;
+          top: 10px;
+
+          .video-button {
+            margin-right: 12px;
+            padding-top: 0;
+          }
+          img {
+            width: 40px;
+          }
+          h5 {
+            font-size: 30px;
+          }
+        } // video-text
+      } // video-thumbnail
+    } // video
+  } // info
+  .productInfo {
+    #productsSlider {
+      img {
+        width: 300px;
+        margin-left: -40px;
+        margin-right: 40px;
+      }
+      .productInfo-details {
+        flex-direction: row;
+        text-align: left;
+      }
+      .productInfo-text {
+        width: 60%;
+      }
+      .slick-dots {
+        bottom: -80px;
+        li {
+          height: 63px;
+          width: 75px;
+          padding-left: 12px;
+        }
       }
     }
-  } // info
+  }// productInfo
+  .carousel {
+    margin-top: 90px;
+
+    h3 {
+      font-size: 33px;
+    }
+  } // carousel
+  .blog {
+    text-align: left;
+    height: auto;
+    padding: 0;
+
+    .blog-text {
+      width: 50%;
+      position: absolute;
+      margin-left: 4%;
+
+    } //blog-text
+    .blog-img {
+      overflow: hidden;
+
+      img {
+        margin-right: -120px;
+      }
+    } // blog-img
+  } // blog
 } // min 650 to max 1024 - Tablet
-// @media only screen and (min-width: 830px) and (max-width: 1024px) {
-//   .infoIntro {
-//     h2 {
-//       width: 730px !important;
-//     }
-//   }
-//   .products {
-//     .productDetails {
-//       .product {
-//         .dc-cta {
-//           margin-top: 40px;
-//         }
-//       }
-//     } // productsCTA
-//   } // products
-//   .toners {
-//     height: 860px;
-//   } // toners
-// }
+@media only screen and (min-width: 830px) and (max-width: 1024px) {
+  .history {
+    .history-img {
+      left: -14px;
+
+      img {
+        margin-left: -160px;
+        width: 740px;
+        max-width: 500px;
+      }
+    } // history-img
+  } // history
+  .info {
+    .video {
+      .video-thumbnail {
+        .video-text {
+          left: 40px;
+          top: 30px;
+        }
+        .video-button {
+          margin-right: 20px;
+        }
+      }
+    } // video
+  } // info
+} // min 830 to max 1024 - Tablet exceptions
 // @media only screen and (min-width: 376px) and (max-width: 424px) {
 //   .products {
 //     .productDetails {

@@ -200,6 +200,7 @@ body {
 
 .content-wrapper h3 {
   font-size: 24px;
+  font-weight: 400;
 }
 
 .content-wrapper .slick-next, .content-wrapper .slick-arrow {
@@ -324,7 +325,7 @@ body {
 }
 
 .info .stepsIcon .step1, .info .stepsIcon .step2 {
-  width: 40%;
+  width: 80%;
 }
 
 .info .stepsIcon .step1 h6, .info .stepsIcon .step2 h6 {
@@ -340,8 +341,12 @@ body {
 }
 
 .info .stepsIcon .info-icon {
-  width: 22%;
+  width: 50%;
   margin: 0 40px;
+}
+
+.info .stepsIcon .info-icon img {
+  width: 164px;
 }
 
 .info .benefits {
@@ -499,6 +504,11 @@ body {
   text-align: center;
 }
 
+.carousel h3 {
+  font-weight: 400;
+  font-size: 33px;
+}
+
 .carousel #setsCarousel {
   width: 90%;
   margin: 0 auto;
@@ -605,6 +615,7 @@ body {
   }
   .history .history-img {
     display: block;
+    margin: 0 auto;
     order: 2;
   }
   .history .history-img img {
@@ -661,6 +672,10 @@ body {
   .info .stepsIcon .info-icon {
     order: 1;
     margin: 0 auto 10px auto;
+    width: 100%;
+  }
+  .info .stepsIcon .info-icon img {
+    width: 100px;
   }
   .info .benefits {
     width: 100%;
@@ -716,9 +731,9 @@ body {
     bottom: 0;
   }
   .productInfo #productsSlider .slick-dots li {
-    height: 34px;
+    height: 44px;
     width: 50px;
-    padding: 0 8px;
+    padding-left: 8px;
   }
   .productInfo #productsSlider .slick-dots .slick-active a {
     padding-bottom: 0;
@@ -740,6 +755,18 @@ body {
   .content-wrapper h1 {
     font-size: 68px;
   }
+  .content-wrapper .one {
+    order: 1;
+  }
+  .content-wrapper .two {
+    order: 2;
+  }
+  .content-wrapper .three {
+    order: 3;
+  }
+  .content-wrapper .four {
+    order: 4;
+  }
   .hero {
     text-align: center;
   }
@@ -760,23 +787,26 @@ body {
     width: 80%;
   }
   .history {
+    height: auto;
     display: inline-block;
   }
   .history .history-img {
     order: 1;
-    width: 378px;
-    height: 360px;
+    width: 40%;
     display: inline-block;
+    position: absolute;
+    left: -140px;
   }
   .history .history-img img {
-    margin-left: -160px;
     width: 740px;
+    max-width: 400px;
   }
   .history .history-upper {
     text-align: left;
     order: 2;
-    width: 50%;
+    width: 60%;
     float: right;
+    position: relative;
   }
   .history .history-upper .history-upperDivider {
     width: 300px;
@@ -785,15 +815,106 @@ body {
   .history .history-lower {
     text-align: left;
     order: 3;
-    width: 50%;
+    width: 60%;
     float: right;
+    position: relative;
   }
   .history .history-lower .history-lowerDivider {
     width: 100px;
     height: 22px;
   }
-  .info #ingredientsSlider .slick-active {
-    width: 4.5% !important;
+  .info {
+    margin: 0 auto;
+  }
+  .info .stepsIcon {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .info .stepsIcon .step1, .info .stepsIcon .step2 {
+    width: 44%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .info .benefits {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .info .benefits .benefit {
+    width: 50%;
+  }
+  .info .video .video-thumbnail .video-text {
+    left: 20px;
+    top: 10px;
+  }
+  .info .video .video-thumbnail .video-text .video-button {
+    margin-right: 12px;
+    padding-top: 0;
+  }
+  .info .video .video-thumbnail .video-text img {
+    width: 40px;
+  }
+  .info .video .video-thumbnail .video-text h5 {
+    font-size: 30px;
+  }
+  .productInfo #productsSlider img {
+    width: 300px;
+    margin-left: -40px;
+    margin-right: 40px;
+  }
+  .productInfo #productsSlider .productInfo-details {
+    flex-direction: row;
+    text-align: left;
+  }
+  .productInfo #productsSlider .productInfo-text {
+    width: 60%;
+  }
+  .productInfo #productsSlider .slick-dots {
+    bottom: -80px;
+  }
+  .productInfo #productsSlider .slick-dots li {
+    height: 63px;
+    width: 75px;
+    padding-left: 12px;
+  }
+  .carousel {
+    margin-top: 90px;
+  }
+  .carousel h3 {
+    font-size: 33px;
+  }
+  .blog {
+    text-align: left;
+    height: auto;
+    padding: 0;
+  }
+  .blog .blog-text {
+    width: 50%;
+    position: absolute;
+    margin-left: 4%;
+  }
+  .blog .blog-img {
+    overflow: hidden;
+  }
+  .blog .blog-img img {
+    margin-right: -120px;
+  }
+}
+
+@media only screen and (min-width: 830px) and (max-width: 1024px) {
+  .history .history-img {
+    left: -14px;
+  }
+  .history .history-img img {
+    margin-left: -160px;
+    width: 740px;
+    max-width: 500px;
+  }
+  .info .video .video-thumbnail .video-text {
+    left: 40px;
+    top: 30px;
+  }
+  .info .video .video-thumbnail .video-button {
+    margin-right: 20px;
   }
 }
 
