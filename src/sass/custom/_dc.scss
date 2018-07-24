@@ -10,7 +10,7 @@ $dcGold: #ffd54f;
     height: 100%;
   }
 }
-.productInfo, .carousel {
+.productInfo {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -326,42 +326,42 @@ $dcGold: #ffd54f;
     font-weight: 400;
     font-size: 33px;
   }
-  #setsCarousel {
-    width: 90%;
-    margin: 0 auto;
-
-    .slick-track {
-      width: 100% !important;
-      margin: 0 auto;
-    }
-    .slick-slide {
-      width: 100% !important;
-    }
-    .product-item {
-      width: 200px;
-    }
-    .widget .block-products-list .add-button {
-      font-weight: 400;
-      // background: $blue700;
-      // border: 1px solid $blue700;
-      // color: #fff;
-      // padding: 10px 20px;
-      // margin-top: 20px;
-      //
-      // &:hover {
-      //   background: lighten($blue700, 20%);
-      //   border: 1px solid $blue700;
-      //   color: #fff;
-      // }
-    }
-  } // setsCarousel
+  // #setsCarousel {
+  //   width: 90%;
+  //   margin: 0 auto;
+  //
+  //   .slick-track {
+  //     width: 100% !important;
+  //     margin: 0 auto;
+  //   }
+  //   .slick-slide {
+  //     width: 100% !important;
+  //   }
+  //   .product-item {
+  //     width: 200px;
+  //   }
+  //   .widget .block-products-list .add-button {
+  //     font-weight: 400;
+  //     // background: $blue700;
+  //     // border: 1px solid $blue700;
+  //     // color: #fff;
+  //     // padding: 10px 20px;
+  //     // margin-top: 20px;
+  //     //
+  //     // &:hover {
+  //     //   background: lighten($blue700, 20%);
+  //     //   border: 1px solid $blue700;
+  //     //   color: #fff;
+  //     // }
+  //   }
+  // } // setsCarousel
 } // carousel
-.blog {
-  height: 600px;
+.learn {
+  max-height: 670px;
   margin: 0;
   padding: 0 0 20px 0;
 
-  .blog-text {
+  .learn-text {
     position: absolute;
     margin-left: 10%;
     display: inline-block;
@@ -383,8 +383,8 @@ $dcGold: #ffd54f;
     a:hover {
       color: $dcBlue;
     } // a hover
-  } // blog-text
-  .blog-img {
+  } // learn-text
+  .learn-img {
     width: 100%;
     display: inline-block;
     float: right;
@@ -394,4 +394,4 @@ $dcGold: #ffd54f;
       float: right;
     }
   } // toners-img
-} // blog
+} // learn

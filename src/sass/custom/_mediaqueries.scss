@@ -205,15 +205,15 @@
       font-size: 28px;
     }
   } // carousel
-  .blog {
+  .learn {
     text-align: center;
 
-    .blog-text {
+    .learn-text {
       width: 100%;
       position: relative;
       margin: 0 auto;
-    } // blog-text
-  } // blog
+    } // learn-text
+  } // learn
 } // Mobile & Tablet - everything smaller than 1024
 
 @media only screen and (min-width: 650px) and (max-width: 1024px) {
@@ -372,25 +372,25 @@
       font-size: 33px;
     }
   } // carousel
-  .blog {
+  .learn {
     text-align: left;
-    height: auto;
-    padding: 0;
+    // height: 668px;
+    // padding: 0;
 
-    .blog-text {
+    .learn-text {
       width: 50%;
       position: absolute;
       margin-left: 4%;
 
-    } //blog-text
-    .blog-img {
+    } //learn-text
+    .learn-img {
       overflow: hidden;
 
       img {
-        margin-right: -120px;
+        margin-right: -120px !important;
       }
-    } // blog-img
-  } // blog
+    } // learn-img
+  } // learn
 } // min 650 to max 1024 - Tablet
 @media only screen and (min-width: 830px) and (max-width: 1024px) {
   .hero {
@@ -426,15 +426,27 @@
       }
     } // video
   } // info
+  .learn {
+    .learn-text {
+      width: 50%;
+    } //learn-text
+    .learn-img {
+      overflow: hidden;
+
+      img {
+        margin-right: -160px !important;
+      }
+    } // learn-img
+  } // learn
 } // min 830 to max 1024 - Tablet exceptions
-// @media only screen and (min-width: 376px) and (max-width: 424px) {
-//   .products {
-//     .productDetails {
-//       .product {
-//         .dc-cta {
-//           margin-top: 60px;
-//         }
-//       }
-//     } // productsCTA
-//   } // products
-// } // min 376 to max 424 - Mobile exceptions
+@media only screen and (min-width: 380px) and (max-width: 500px) {
+  .info {
+    .video {
+      .video-thumbnail {
+        .video-text {
+          text-align: right;
+        } // video-text
+      } // video-thumbnail
+    } // video
+  } // info
+} // min 376 to max 424 - Mobile exceptions

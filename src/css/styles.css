@@ -187,7 +187,7 @@ body {
   height: 100%;
 }
 
-.productInfo, .carousel {
+.productInfo {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -509,60 +509,38 @@ body {
   font-size: 33px;
 }
 
-.carousel #setsCarousel {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.carousel #setsCarousel .slick-track {
-  width: 100% !important;
-  margin: 0 auto;
-}
-
-.carousel #setsCarousel .slick-slide {
-  width: 100% !important;
-}
-
-.carousel #setsCarousel .product-item {
-  width: 200px;
-}
-
-.carousel #setsCarousel .widget .block-products-list .add-button {
-  font-weight: 400;
-}
-
-.blog {
-  height: 600px;
+.learn {
+  max-height: 670px;
   margin: 0;
   padding: 0 0 20px 0;
 }
 
-.blog .blog-text {
+.learn .learn-text {
   position: absolute;
   margin-left: 10%;
   display: inline-block;
   width: 28%;
 }
 
-.blog .blog-text h2 {
+.learn .learn-text h2 {
   margin-bottom: 2rem;
 }
 
-.blog .blog-text p {
+.learn .learn-text p {
   margin-bottom: 2rem;
 }
 
-.blog .blog-text a:hover {
+.learn .learn-text a:hover {
   color: #00388d;
 }
 
-.blog .blog-img {
+.learn .learn-img {
   width: 100%;
   display: inline-block;
   float: right;
 }
 
-.blog .blog-img img {
+.learn .learn-img img {
   width: 1280px;
   float: right;
 }
@@ -742,10 +720,10 @@ body {
   .carousel h3 {
     font-size: 28px;
   }
-  .blog {
+  .learn {
     text-align: center;
   }
-  .blog .blog-text {
+  .learn .learn-text {
     width: 100%;
     position: relative;
     margin: 0 auto;
@@ -881,21 +859,19 @@ body {
   .carousel h3 {
     font-size: 33px;
   }
-  .blog {
+  .learn {
     text-align: left;
-    height: auto;
-    padding: 0;
   }
-  .blog .blog-text {
+  .learn .learn-text {
     width: 50%;
     position: absolute;
     margin-left: 4%;
   }
-  .blog .blog-img {
+  .learn .learn-img {
     overflow: hidden;
   }
-  .blog .blog-img img {
-    margin-right: -120px;
+  .learn .learn-img img {
+    margin-right: -120px !important;
   }
 }
 
@@ -919,6 +895,21 @@ body {
   }
   .info .video .video-thumbnail .video-button {
     margin-right: 20px;
+  }
+  .learn .learn-text {
+    width: 50%;
+  }
+  .learn .learn-img {
+    overflow: hidden;
+  }
+  .learn .learn-img img {
+    margin-right: -192px;
+  }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 500px) {
+  .info .video .video-thumbnail .video-text {
+    text-align: right;
   }
 }
 
