@@ -38,6 +38,8 @@
       margin-top: 16px;
       margin-left: auto;
       margin-right: auto;
+      left: auto;
+      top: auto;
 
       h1 {
         // margin-left: auto;
@@ -207,9 +209,11 @@
   } // carousel
   .learn {
     text-align: center;
+    width: 95%;
+    margin: 0 auto;
 
     .learn-text {
-      width: 100%;
+      width: 95%;
       position: relative;
       margin: 0 auto;
     } // learn-text
@@ -326,7 +330,7 @@
       .video-thumbnail {
         .video-text {
           left: 20px;
-          top: 10px;
+          top: 0;
 
           .video-button {
             margin-right: 12px;
@@ -449,6 +453,8 @@
       .video-thumbnail {
         .video-text {
           text-align: right;
+          left: 8%;
+          top: 20%;
         } // video-text
       } // video-thumbnail
     } // video

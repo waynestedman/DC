@@ -5,6 +5,8 @@ $dcGold: #ffd54f;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 1280px;
+
   img {
     width: 1280px;
     height: 100%;
@@ -64,9 +66,10 @@ $dcGold: #ffd54f;
   }
   .hero-text {
     text-align: center;
-    padding-top: 8%;
-    padding-left: 52%;
+    padding-top: 120px;
+    left: 52%;
     position: absolute;
+
     img {
       width: 225px;
       height: 78px;
@@ -365,10 +368,11 @@ $dcGold: #ffd54f;
   max-height: 670px;
   margin: 0;
   padding: 0 0 20px 0;
+  max-width: 1280px;
 
   .learn-text {
     position: absolute;
-    margin-left: 10%;
+    margin-left: 6%;
     display: inline-block;
     width: 30%;
 
