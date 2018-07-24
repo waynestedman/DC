@@ -156,7 +156,7 @@
           img {
             width: 26px;
           }
-          h5 {
+          .overlay-text {
             font-size: 20px;
           }
         } // video-text
@@ -249,7 +249,8 @@
       padding: 7% 0 0 40%;
 
       h1 {
-        font-size: 68px;
+        font-size: 50px;
+        line-height: 1.1;
         width: 80%;
       }
     } // hero-text
@@ -334,7 +335,7 @@
           img {
             width: 40px;
           }
-          h5 {
+          .overlay-text {
             font-size: 30px;
           }
         } // video-text
@@ -409,9 +410,12 @@
         margin-left: -160px;
         margin-top: -25px;
         width: 740px;
-        max-width: 500px;
+        // max-width: 500px;
       }
     } // history-img
+    .history-upper, .history-lower {
+      width: 70%;
+    }
   } // history
   .info {
     .video {

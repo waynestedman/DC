@@ -226,8 +226,8 @@ body {
 
 .hero .hero-text {
   text-align: center;
-  padding-top: 7%;
-  padding-left: 34%;
+  padding-top: 8%;
+  padding-left: 52%;
   position: absolute;
 }
 
@@ -424,10 +424,15 @@ body {
   width: 40px;
 }
 
-.info .video .video-thumbnail .video-text h5 {
+.info .video .video-thumbnail .video-text .overlay-text {
   display: inline-block;
   vertical-align: middle;
   color: #000000;
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: 300;
+  margin-top: 2.6rem;
+  margin-bottom: .4rem;
 }
 
 .productInfo {
@@ -519,7 +524,7 @@ body {
   position: absolute;
   margin-left: 10%;
   display: inline-block;
-  width: 28%;
+  width: 30%;
 }
 
 .learn .learn-text h2 {
@@ -683,7 +688,7 @@ body {
   .info .video .video-thumbnail .video-text img {
     width: 26px;
   }
-  .info .video .video-thumbnail .video-text h5 {
+  .info .video .video-thumbnail .video-text .overlay-text {
     font-size: 20px;
   }
   .productInfo {
@@ -760,7 +765,8 @@ body {
     padding: 7% 0 0 40%;
   }
   .hero .hero-text h1 {
-    font-size: 68px;
+    font-size: 50px;
+    line-height: 1.1;
     width: 80%;
   }
   .history {
@@ -830,7 +836,7 @@ body {
   .info .video .video-thumbnail .video-text img {
     width: 40px;
   }
-  .info .video .video-thumbnail .video-text h5 {
+  .info .video .video-thumbnail .video-text .overlay-text {
     font-size: 30px;
   }
   .productInfo #productsSlider img {
@@ -887,7 +893,9 @@ body {
     margin-left: -160px;
     margin-top: -25px;
     width: 740px;
-    max-width: 500px;
+  }
+  .history .history-upper, .history .history-lower {
+    width: 70%;
   }
   .info .video .video-thumbnail .video-text {
     left: 40px;
@@ -903,7 +911,7 @@ body {
     overflow: hidden;
   }
   .learn .learn-img img {
-    margin-right: -192px;
+    margin-right: -160px !important;
   }
 }
 
