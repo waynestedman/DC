@@ -230,6 +230,7 @@ jQuery(document).ready(function(){
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  max-width: 1280px;
 }
 
 .hero img, .history img {
@@ -283,8 +284,8 @@ jQuery(document).ready(function(){
 
 .hero .hero-text {
   text-align: center;
-  padding-top: 8%;
-  padding-left: 52%;
+  padding-top: 120px;
+  left: 52%;
   position: absolute;
 }
 
@@ -519,8 +520,8 @@ jQuery(document).ready(function(){
   font-size: 30px;
   line-height: 1.4;
   font-weight: 300;
-   margin-top: 2.6rem;
-   margin-bottom: .4rem;
+  margin-top: 2.6rem;
+  margin-bottom: .4rem;
 }
 
 .productInfo {
@@ -610,11 +611,12 @@ jQuery(document).ready(function(){
   max-height: 670px;
   margin: 0;
   padding: 0 0 20px 0;
+  max-width: 1280px;
 }
 
 .learn .learn-text {
   position: absolute;
-  margin-left: 10%;
+  margin-left: 6%;
   display: inline-block;
   width: 30%;
 }
@@ -684,6 +686,8 @@ jQuery(document).ready(function(){
     margin-top: 16px;
     margin-left: auto;
     margin-right: auto;
+    left: auto;
+    top: auto;
   }
   .hero .hero-text h1 {
     width: 100%;
@@ -851,9 +855,11 @@ jQuery(document).ready(function(){
   }
   .learn {
     text-align: center;
+    width: 95%;
+    margin: 0 auto;
   }
   .learn .learn-text {
-    width: 100%;
+    width: 95%;
     position: relative;
     margin: 0 auto;
   }
@@ -897,9 +903,9 @@ jQuery(document).ready(function(){
     padding: 7% 0 0 40%;
   }
   .hero .hero-text h1 {
-    font-size: 50px;
-    line-height: 1.1;
-    width: 80%;
+   font-size: 50px;
+   line-height: 1.1;
+   width: 80%;
   }
   .history {
     height: auto;
@@ -975,7 +981,7 @@ jQuery(document).ready(function(){
   }
   .info .video .video-thumbnail .video-text {
     left: 20px;
-    top: 10px;
+    top: 0;
   }
   .info .video .video-thumbnail .video-text .video-button {
     margin-right: 12px;
@@ -1069,12 +1075,14 @@ jQuery(document).ready(function(){
 @media only screen and (min-width: 380px) and (max-width: 500px) {
   .info .video .video-thumbnail .video-text {
     text-align: right;
+    left: 8%;
+    top: 20%;
   }
 }
 --></style>
 <div class="content-wrapper"><section class="hero">
 <div class="hero-img"><picture> <source media="(max-width: 500px)" srcset="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-hero-mobile.jpg" /> <source media="(max-width: 1024px)" srcset="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-hero-tablet.jpg" /> <img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-hero.jpg" alt="" /> </picture></div>
-<div class="hero-text"><img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/header-drops.svg" alt="" />
+<div class="hero-text"><img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/header-drops2.svg" alt="" />
 <h1>Double Cleansing</h1>
 </div>
 </section><section class="history">

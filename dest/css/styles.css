@@ -647,10 +647,17 @@ body {
     margin-top: 16px;
     margin-left: auto;
     margin-right: auto;
+    left: auto;
+    top: auto;
   }
   .hero .hero-text h1 {
     width: 100%;
     font-size: 40px;
+  }
+  .hero .hero-text img {
+    width: 225px;
+    height: 78px;
+    margin: 0 auto !important;
   }
   .history {
     background: none;
@@ -671,7 +678,9 @@ body {
   }
   .history .history-img img {
     max-width: 450px;
-    width: 100%;
+    width: 80%;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   .history .history-upper, .history .history-lower {
     padding: 8px;
@@ -696,11 +705,13 @@ body {
     height: 16px;
   }
   .info {
-    margin: 220px auto 0 auto;
-    width: 95%;
+    margin: 120px auto 0 auto;
+    width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
   .info .info-border {
-    padding-bottom: 14px;
+    margin: 0 3px;
   }
   .info .info-whatIs {
     width: 95%;
@@ -708,6 +719,9 @@ body {
   .info .info-whatIs h2 {
     font-size: 36px;
     width: 100%;
+  }
+  .info .info-whatIs p {
+    padding: 0 10px;
   }
   .info .stepsIcon {
     -webkit-box-orient: vertical;
@@ -721,7 +735,7 @@ body {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
-    margin: 0 auto 10px auto;
+    margin: 10px auto;
     width: 95%;
   }
   .info .stepsIcon .step2 {
@@ -756,8 +770,11 @@ body {
     width: 19px;
   }
   .info .video {
-    width: 95%;
-    margin-bottom: 30px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .info .video .video-thumbnail {
+    padding: 10px;
   }
   .info .video .video-thumbnail .video-text {
     left: 0;
@@ -814,11 +831,13 @@ body {
   }
   .learn {
     text-align: center;
+    width: 95%;
+    margin: 0 auto;
   }
   .learn .learn-text {
-    width: 100%;
+    width: 95%;
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
   }
 }
 
@@ -882,7 +901,7 @@ body {
     max-width: 400px;
   }
   .history .history-upper {
-    text-align: left;
+    text-align: center;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
@@ -895,7 +914,7 @@ body {
     height: 22px;
   }
   .history .history-lower {
-    text-align: left;
+    text-align: center;
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
@@ -909,6 +928,12 @@ body {
   }
   .info {
     margin: 0 auto;
+    width: 95%;
+    -webkit-box-shadow: -1px -1px 15px 3px rgba(196, 196, 196, 0.6);
+    box-shadow: -1px -1px 15px 3px rgba(196, 196, 196, 0.6);
+  }
+  .info .info-border {
+    margin: 10px 20px;
   }
   .info .stepsIcon {
     -ms-flex-wrap: wrap;
@@ -920,8 +945,9 @@ body {
   }
   .info .stepsIcon .step1, .info .stepsIcon .step2 {
     width: 44%;
-    margin-left: 0;
-    margin-right: 0;
+  }
+  .info .stepsIcon .step2 {
+    margin: 10px auto;
   }
   .info .benefits {
     -webkit-box-orient: horizontal;
@@ -936,7 +962,7 @@ body {
   }
   .info .video .video-thumbnail .video-text {
     left: 20px;
-    top: 10px;
+    top: 0;
   }
   .info .video .video-thumbnail .video-text .video-button {
     margin-right: 12px;
@@ -1002,7 +1028,7 @@ body {
     left: -14px;
   }
   .history .history-img img {
-    margin-left: -160px;
+    margin-left: -138px;
     margin-top: -25px;
     width: 740px;
   }
@@ -1030,6 +1056,8 @@ body {
 @media only screen and (min-width: 380px) and (max-width: 500px) {
   .info .video .video-thumbnail .video-text {
     text-align: right;
+    left: 8%;
+    top: 20%;
   }
 }
 

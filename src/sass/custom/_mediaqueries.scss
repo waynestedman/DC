@@ -47,6 +47,11 @@
         width: 100%;
         font-size: 40px;
       }
+      img {
+        width: 225px;
+        height: 78px;
+        margin: 0 auto !important;
+      }
     } // hero-text
   } // hero
   .history {
@@ -62,7 +67,9 @@
 
       img {
         max-width: 450px;
-        width: 100%;
+        width: 80%;
+        margin-left: auto !important;
+        margin-right: auto !important;
       }
     }
     .history-upper, .history-lower {
@@ -88,11 +95,13 @@
   } // history
 
   .info {
-    margin: 220px auto 0 auto;
-    width: 95%;
+    margin: 120px auto 0 auto;
+    width: 100%;
+    box-shadow: none;
 
     .info-border {
-      padding-bottom: 14px;
+      // padding-bottom: 14px;
+      margin: 0 3px;
     } // info-border
     .info-whatIs {
       width: 95%;
@@ -100,6 +109,9 @@
       h2 {
         font-size: 36px;
         width: 100%;
+      }
+      p {
+        padding: 0 10px;
       }
     } // whatIs
     .stepsIcon {
@@ -109,7 +121,7 @@
 
       .step1 {
         order: 2;
-        margin: 0 auto 10px auto;
+        margin: 10px auto;
         width: 95%;
       }
       .step2 {
@@ -141,10 +153,12 @@
       }
     } // benefits
     .video {
-      width: 95%;
-      margin-bottom: 30px;
+      width: 100%;
+      margin-bottom: 8px;
 
       .video-thumbnail {
+        padding: 10px;
+
         .video-text {
           left: 0;
           top: 6px;
@@ -215,7 +229,7 @@
     .learn-text {
       width: 95%;
       position: relative;
-      margin: 0 auto;
+      margin: 0 auto 20px auto;
     } // learn-text
   } // learn
 } // Mobile & Tablet - everything smaller than 1024
@@ -279,7 +293,7 @@
       }
     }
     .history-upper {
-      text-align: left;
+      text-align: center;
       order: 2;
       width: 60%;
       float: right;
@@ -292,7 +306,7 @@
       }
     } // history-upper
     .history-lower {
-      text-align: left;
+      text-align: center;
       order: 3;
       width: 60%;
       float: right;
@@ -307,15 +321,23 @@
 
   .info {
     margin: 0 auto;
+    width: 95%;
+    box-shadow: -1px -1px 15px 3px rgba(196,196,196,0.6);
 
+    .info-border {
+      margin: 10px 20px;
+    }
     .stepsIcon {
       flex-wrap: wrap;
       flex-direction: row;
 
       .step1, .step2 {
         width: 44%;
-        margin-left: 0;
-        margin-right: 0;
+        // margin-left: 0;
+        // margin-right: 0;
+      }
+      .step2 {
+        margin: 10px auto;
       }
     } // stepsIcon
     .benefits {
@@ -411,7 +433,7 @@
       left: -14px;
 
       img {
-        margin-left: -160px;
+        margin-left: -138px;
         margin-top: -25px;
         width: 740px;
         // max-width: 500px;
