@@ -694,8 +694,8 @@ body {
     padding: 10px;
   }
   .info .video .video-thumbnail .video-text {
-    left: 0;
-    top: 6px;
+    left: 20px;
+    top: 22px;
     margin: 0 auto;
     width: 100%;
   }
@@ -945,7 +945,7 @@ body {
   .info .video .video-thumbnail .video-text {
     text-align: right;
     left: 8%;
-    top: 20%;
+    top: 32%;
   }
 }
 

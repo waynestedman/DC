@@ -712,7 +712,9 @@ jQuery(document).ready(function(){
   }
   .history .history-img img {
     max-width: 450px;
-    width: 100%;
+    width: 80%;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   .history .history-upper, .history .history-lower {
     padding: 8px;
@@ -737,11 +739,12 @@ jQuery(document).ready(function(){
     height: 16px;
   }
   .info {
-    margin: 220px auto 0 auto;
-    width: 95%;
+    margin: 120px auto 0 auto;
+    width: 100%;
+    box-shadow: none;
   }
   .info .info-border {
-    padding-bottom: 14px;
+    margin: 0 3px;
   }
   .info .info-whatIs {
     width: 95%;
@@ -749,6 +752,9 @@ jQuery(document).ready(function(){
   .info .info-whatIs h2 {
     font-size: 36px;
     width: 100%;
+  }
+ .info .info-whatIs p {
+    padding: 0 10px;
   }
   .info .stepsIcon {
     -webkit-box-orient: vertical;
@@ -762,7 +768,7 @@ jQuery(document).ready(function(){
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
-    margin: 0 auto 10px auto;
+    margin: 10px auto;
     width: 95%;
   }
   .info .stepsIcon .step2 {
@@ -797,12 +803,15 @@ jQuery(document).ready(function(){
     width: 19px;
   }
   .info .video {
-    width: 95%;
-    margin-bottom: 30px;
+    width: 100%;
+    margin-bottom: 6px;
+  }
+  .info .video .video-thumbnail {
+    padding: 10px;
   }
   .info .video .video-thumbnail .video-text {
-    left: 0;
-    top: 6px;
+    left: 20px;
+    top: 22px;
     margin: 0 auto;
       max-width: 361px;
   }
@@ -861,7 +870,7 @@ jQuery(document).ready(function(){
   .learn .learn-text {
     width: 95%;
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
   }
 }
 
@@ -925,7 +934,7 @@ jQuery(document).ready(function(){
     max-width: 400px;
   }
   .history .history-upper {
-    text-align: left;
+    text-align: center;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
@@ -939,7 +948,7 @@ jQuery(document).ready(function(){
     height: 22px;
   }
   .history .history-lower {
-    text-align: left;
+    text-align: center;
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
@@ -954,6 +963,11 @@ jQuery(document).ready(function(){
   }
   .info {
     margin: 0 auto;
+    width: 95%;
+    box-shadow: -1px -1px 15px 3px rgba(196,196,196,0.6);
+  }
+  .info .info-border {
+    margin: 10px 20px;
   }
   .info .stepsIcon {
     -ms-flex-wrap: wrap;
@@ -965,8 +979,9 @@ jQuery(document).ready(function(){
   }
   .info .stepsIcon .step1, .info .stepsIcon .step2 {
     width: 44%;
-    margin-left: 0;
-    margin-right: 0;
+  }
+  .info .stepsIcon .step2 {
+    margin: 10px auto;
   }
   .info .benefits {
     -webkit-box-orient: horizontal;
@@ -1076,17 +1091,17 @@ jQuery(document).ready(function(){
   .info .video .video-thumbnail .video-text {
     text-align: right;
     left: 8%;
-    top: 20%;
+    top: 32%;
   }
 }
 --></style>
 <div class="content-wrapper"><section class="hero">
-<div class="hero-img"><picture> <source media="(max-width: 500px)" srcset="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-hero-mobile.jpg" /> <source media="(max-width: 1024px)" srcset="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-hero-tablet.jpg" /> <img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-hero.jpg" alt="" /> </picture></div>
-<div class="hero-text"><img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/header-drops2.svg" alt="" />
+<div class="hero-img"><picture> <source media="(max-width: 500px)" srcset="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-hero-mobile.jpg" /> <source media="(max-width: 1024px)" srcset="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-hero-tablet.jpg" /> <img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-hero.jpg" alt="DHC Deep Cleansing Oil for a Double Cleansing regimen" /> </picture></div>
+<div class="hero-text"><picture> <source media="(max-width: 500px)" srcset="https://www.dhccare.com/media/wysiwyg/dev_test/dc/header-drops-mobile.png" /> <img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/header-drops2.svg" alt="Master the art of Double Cleansing" /> </picture>
 <h1>Double Cleansing</h1>
 </div>
 </section><section class="history">
-<div class="history-img"><picture> <source media="(max-width: 1024px)" srcset="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-intro-tab-mobile.png" /> <img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-intro.jpg" alt="" /> </picture></div>
+<div class="history-img"><picture> <source media="(max-width: 1024px)" srcset="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-intro-tab-mobile.png" /> <img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-intro.jpg" alt="picture of a Japanese Geisha" /> </picture></div>
 <div class="history-upper">
 <div class="history-upperDivider"></div>
 <p>Centuries ago, Japanese women craved pure white complexions, inspired by the delicate beauty of geisha. To achieve a dramatic look, they commonly used oshiroi, a bright white powder made from rice often blended with powdered metals, oil and wax—and to remove it, they massaged emollient oils into their skin and rinsed them away, followed by a foaming cleanser.</p>
@@ -1108,7 +1123,7 @@ jQuery(document).ready(function(){
 <h3 class="text-blue">Remove Impurities</h3>
 <p>Since oil naturally binds with oil, this step removes make-up, sebum and environmental impurities. Place a small amount of oil on dry hands and massage it over your dry face. Rinse with lukewarm water.</p>
 </div>
-<div class="info-icon"><img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-icon.svg" alt="" /></div>
+<div class="info-icon"><img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-icon.svg" alt="DHC Double Cleansing icon" /></div>
 <div class="step2">
 <h6>STEP 2</h6>
 <h3 class="text-blue">Cleanse</h3>
@@ -1117,19 +1132,19 @@ jQuery(document).ready(function(){
 </div>
 <!-- stepsIcon -->
 <div class="benefits">
-<div class="benefit one"><img class="drop" src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-drop-yellow.svg" alt="" />
+<div class="benefit one"><img class="drop" src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-drop-yellow.svg" alt="Deep Cleanse" />
 <p class="benefit-title">Deep Cleanse</p>
 <p>Oil binds with impurities and washes them away without clogging pores, and cleanser leaves skin gently refreshed</p>
 </div>
-<div class="benefit three"><img class="drop" src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-drop-blue.svg" alt="" />
+<div class="benefit three"><img class="drop" src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-drop-blue.svg" alt="Nourish" />
 <p class="benefit-title">Nourish</p>
 <p>Organic virgin olive oil and Japanese botanicals hydrate and maintain skin’s pH balance</p>
 </div>
-<div class="benefit two"><img class="drop" src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-drop-yellow.svg" alt="" />
+<div class="benefit two"><img class="drop" src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-drop-yellow.svg" alt="Defend" />
 <p class="benefit-title">Protect</p>
 <p>Antioxidants defend against free-radical damage and help protect skin from environmental irritants</p>
 </div>
-<div class="benefit four"><img class="drop" src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-drop-blue.svg" alt="" />
+<div class="benefit four"><img class="drop" src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-drop-blue.svg" alt="Set the Stage" />
 <p class="benefit-title">Set the Stage</p>
 <p>Prepares skin for the toner, serum and moisturiser that follow</p>
 </div>
@@ -1138,9 +1153,9 @@ jQuery(document).ready(function(){
 <div class="video-thumbnail">
 <script src="https://fast.wistia.com/embed/medias/s0w5d5rgpa.jsonp" async="" type="text/javascript" xml="space"></script>
 <script src="https://fast.wistia.com/assets/external/E-v1.js" async="" type="text/javascript" xml="space"></script>
-<span class="wistia_embed wistia_async_s0w5d5rgpa popover=true popoverContent=link" style="display: inline; position: relative;"><a href="#"> <picture> <source media="(max-width: 500px)" srcset="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-video-mobile.jpg" /> <source media="(max-width: 1024px)" srcset="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-video-tablet.jpg" /> <img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-video.jpg" alt="" /> </picture> </a></span>
+<span class="wistia_embed wistia_async_s0w5d5rgpa popover=true popoverContent=link" style="display: inline; position: relative;"><a href="#"> <picture> <source media="(max-width: 500px)" srcset="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-video-mobile.jpg" /> <source media="(max-width: 1024px)" srcset="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-video-tablet.jpg" /> <img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-video.jpg" alt="click to play the video about Double Cleansing" /> </picture> </a></span>
 <div class="video-text">
-<div class="video-button"><span class="wistia_embed wistia_async_s0w5d5rgpa popover=true popoverContent=link" style="display: inline; position: relative;"><a href="#"><img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dhc-video-play.svg" alt="" /></a></span></div>
+<div class="video-button"><span class="wistia_embed wistia_async_s0w5d5rgpa popover=true popoverContent=link" style="display: inline; position: relative;"><a href="#"><img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dhc-video-play.svg" alt="Video play button" /></a></span></div>
 <span class="wistia_embed wistia_async_s0w5d5rgpa popover=true popoverContent=link" style="display: inline; position: relative;"><a class="overlay-text" href="#">How to Double Cleanse</a></span></div>
 <!-- video-text --></div>
 <!-- video-thumbnail --></div>
@@ -1148,39 +1163,38 @@ jQuery(document).ready(function(){
 <!-- info border --></section><!-- info --><section class="productInfo">
 <h2 class="text-blue">Find Your Double Cleanse</h2>
 <div id="productsSlider">
-<div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-classic-cleanse-tn.jpg"><img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-classic-cleanse.jpg" alt="" />
+<div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-classic-cleanse-tn.jpg"><img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-classic-cleanse.jpg" alt="The Classic Cleanse" />
 <div class="productInfo-text">
 <h3 class="productInfo-title text-blue">The Classic Cleanse</h3>
-<p class="productInfo-desc">An ideal introduction to the Japanese art of double cleansing. Features bestselling Deep Cleansing Oil and Mild Soap, both powered by antioxidant-rich organic virgin olive oil.</p>
+<p class="productInfo-desc">An ideal introduction to the Japanese art of double cleansing. Features bestselling Deep Cleansing Oil and Mild Soap, both powered by antioxidant-rich organic virgin olive oil.</p>
 <p class="productDesc-cta"><span>SUGGESTED SKIN TYPE:</span> A go-to solution for all skin types.</p>
 </div>
 </div>
-<div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-invigorating-cleanse-tn.jpg"><img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-invigorating-cleanse.jpg" alt="" />
+<div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-invigorating-cleanse-tn.jpg"><img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-invigorating-cleanse.jpg" alt="The Invigorating Cleanse" />
 <div class="productInfo-text">
 <h3 class="productInfo-title text-blue">The Invigorating Cleanse</h3>
 <p class="productInfo-desc">Minimise the appearance of pores with Pore Cleansing Oil and foaming, exfoliating Pore Face Wash. This powerful combo brims with botanicals like grapefruit, orange peel extract and olive oil.</p>
 <p class="productDesc-cta"><span>SUGGESTED SKIN TYPE:</span> Optimal on oily or combination skin.</p>
 </div>
 </div>
-<div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-refreshing-cleanse-tn.jpg"><img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-refreshing-cleanse.jpg" alt="" />
+<div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-refreshing-cleanse-tn.jpg"><img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-refreshing-cleanse.jpg" alt="The Refreshing Cleanse" />
 <div class="productInfo-text">
 <h3 class="productInfo-title text-blue">The Refreshing Cleanse</h3>
 <p class="productInfo-desc">Sweep away the day’s grime and make-up with Deep Cleansing Oil and follow up with lightly exfoliating Face Wash Powder. For extra rich lather, whip up a creamy mousse in our Foaming Mesh.</p>
 <p class="productDesc-cta"><span>SUGGESTED SKIN TYPE:</span> Suitable for all skin types.</p>
 </div>
 </div>
-<div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-purifying-cleanse-tn.jpg"><img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-purifying-cleanse.jpg" alt="" />
+<div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-purifying-cleanse-tn.jpg"><img src="https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-purifying-cleanse.jpg" alt="The Purifying Cleanse" />
 <div class="productInfo-text">
 <h3 class="productInfo-title text-blue">The Purifying Cleanse</h3>
-<p class="productInfo-desc">Pair Deep Cleansing Oil with our liquid Face Wash, which energises with rosemary leaf oil and hydrates with virgin olive oil while dissolving impurities.</p>
+<p class="productInfo-desc">Pair Deep Cleansing Oil with our liquid Face Wash, which energises with rosemary leaf oil and hydrates with virgin olive oil while dissolving impurities.</p>
 <p class="productDesc-cta"><span>SUGGESTED SKIN TYPE:</span> Works great on dry or sensitive skin.</p>
 </div>
 </div>
 </div>
 <!-- products-full --></section><!-- productInfo --><section class="carousel">
 <h3>Shop Double Cleanse Sets</h3>
-<div class="max-width-container">{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="10" template="product/widget/content/grid.phtml" cache_lifetime="1" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`category_ids`,`operator`:`==`,`value`:`80`^]^]"}}</div>
-</section><section class="learn">
+<!-- <img src="./images/carousel.png" alt=""> --> <!--  <div id="setsCarousel"></div> --></section><section class="learn">
 <div class="learn-text">
 <h2 class="text-blue">Do You Double Cleanse?</h2>
 <p>Find out why everyone is going on about Double Cleansing and everything you need to know about this centuries-old Japanese beauty secret.</p>
