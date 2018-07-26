@@ -13,40 +13,40 @@ $(document).ready(function(){
         var thumbnail = $(slider.$slides[i]).data("thumbnail");
         return '<a href="javascript:void(0)"><img src="'+thumbnail+'" class="img-wrapper"></a>'}
   });
-  $('#setsCarousel').slick({
-    dots: false,
-    infinite: true,
-    speed: 600,
-    slidesToShow: 5,
-    slidesToScroll: 5,
-    responsive: [
-      {
-        breakpoint: 1280,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 5,
-          infinite: true,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false
-        }
-      }
-    ]
+  $(".widget-product-grid").slick({
+     dots: false,
+     arrows: false,
+     speed: 1000,
+     infinite: true,
+     slidesToShow: 5,
+     slidesToScroll: 5,
+     responsive: [
+       {
+         breakpoint: 1025,
+         settings: {
+           arrows: true,
+           slidesToShow: 3,
+           slidesToScroll: 3,
+           infinite: true,
+           dots: false
+         }
+       },
+       {
+         breakpoint: 830,
+         settings: {
+           arrows: true,
+           slidesToShow: 2,
+           slidesToScroll: 2
+         }
+       },
+       {
+         breakpoint: 501,
+         settings: {
+           arrows: true,
+           slidesToShow: 1,
+           slidesToScroll: 1
+         }
+       }
+     ]
+   });
   });
-});

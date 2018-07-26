@@ -6,7 +6,7 @@ require([
 jQuery(document).ready(function(){
   jQuery("#productsSlider").slick({
     arrows: false,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000,
     cssEase: 'ease-in-out',
     dots: true,
@@ -24,10 +24,10 @@ jQuery(document).ready(function(){
     speed: 1000,
     infinite: true,
     slidesToShow: 5,
-    slidesToScroll: 4,
+    slidesToScroll: 5,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           arrows: true,
           slidesToShow: 3,

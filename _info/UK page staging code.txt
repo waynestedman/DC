@@ -27,7 +27,7 @@ jQuery(document).ready(function(){
     slidesToScroll: 4,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           arrows: true,
           slidesToShow: 3,
@@ -875,7 +875,7 @@ jQuery(document).ready(function(){
   }
 }
 
-@media only screen and (min-width: 650px) and (max-width: 1024px) {
+@media only screen and (min-width: 640px) and (max-width: 1024px) {
   .content-wrapper .one {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
