@@ -396,7 +396,7 @@ body {
 
 .info .video .video-thumbnail {
   max-width: 1068px;
-  max-height: 140px;
+  max-height: 244px;
   margin: 0 auto;
   z-index: 100;
   position: relative;
@@ -637,6 +637,7 @@ body {
   .info {
     margin: 120px auto 0 auto;
     width: 100%;
+    padding: 0 20px;
     box-shadow: none;
   }
   .info .info-border {
@@ -829,6 +830,7 @@ body {
   .info {
     margin: 0 auto;
     width: 95%;
+    padding: 10px;
     box-shadow: -1px -1px 15px 3px rgba(196, 196, 196, 0.6);
   }
   .info .info-border {
