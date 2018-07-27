@@ -262,10 +262,6 @@ body {
 }
 
 .history {
-  background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-intro.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: top left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,7 +287,7 @@ body {
 }
 
 .history .history-upperDivider {
-  background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg");
+  background-image: url("https://www.dhccare.com/media/wysiwyg/content/regimen/dc/3-drops.svg");
   background-repeat: repeat-x;
   width: 325px;
   height: 24px;
@@ -299,7 +295,7 @@ body {
 }
 
 .history .history-lowerDivider {
-  background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg");
+  background-image: url("https://www.dhccare.com/media/wysiwyg/content/regimen/dc/3-drops.svg");
   background-repeat: repeat-x;
   width: 109px;
   height: 24px;
@@ -832,7 +828,7 @@ body {
   }
   .learn {
     text-align: center;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
   }
   .learn .learn-text {
@@ -1030,8 +1026,8 @@ body {
     left: -14px;
   }
   .history .history-img img {
-    margin-left: -138px;
-    margin-top: -25px;
+    margin-left: -138px !important;
+    margin-top: -25px !important;
     width: 740px;
   }
   .history .history-upper, .history .history-lower {

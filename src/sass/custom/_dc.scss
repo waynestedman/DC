@@ -82,10 +82,10 @@ $dcGold: #ffd54f;
   }
 }
 .history {
-  background-image: url('https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-intro.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: top left;
+  // background-image: url('https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-intro.jpg');
+  // background-repeat: no-repeat;
+  // background-size: 100% 100%;
+  // background-position: top left;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -101,14 +101,14 @@ $dcGold: #ffd54f;
     width: 75%;
   } // history-upper -lower
   .history-upperDivider {
-    background-image: url('https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg');
+    background-image: url('https://www.dhccare.com/media/wysiwyg/content/regimen/dc/3-drops.svg');
     background-repeat: repeat-x;
     width: 325px;
     height: 24px;
     margin: 0 auto 40px auto;
   } // history-upperDivider
   .history-lowerDivider {
-    background-image: url('https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg');
+    background-image: url('https://www.dhccare.com/media/wysiwyg/content/regimen/dc/3-drops.svg');
     background-repeat: repeat-x;
     width: 109px;
     height: 24px;

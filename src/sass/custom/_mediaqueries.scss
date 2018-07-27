@@ -224,7 +224,7 @@
   } // carousel
   .learn {
     text-align: center;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 
     .learn-text {
@@ -435,8 +435,8 @@
       left: -14px;
 
       img {
-        margin-left: -138px;
-        margin-top: -25px;
+        margin-left: -138px !important;
+        margin-top: -25px !important;
         width: 740px;
         // max-width: 500px;
       }

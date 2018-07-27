@@ -1,4 +1,10 @@
 <script type="text/javascript" xml="space">// <![CDATA[
+//
+//
+//
+//
+//
+//
 require([
   'jquery',
   'slick'
@@ -23,8 +29,8 @@ jQuery(document).ready(function(){
     arrows: false,
     speed: 1000,
     infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 5,
+    slidesToScroll: 5,
     responsive: [
       {
         breakpoint: 1025,
@@ -56,6 +62,12 @@ jQuery(document).ready(function(){
   });
  });
 });
+//
+//
+//
+//
+//
+//
 // ]]></script>
 <style xml="space"><!--
 .cms-page-view .column.main img {
@@ -301,7 +313,7 @@ jQuery(document).ready(function(){
 }
 
 .history {
-  background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/dc/dc-intro.jpg");
+  background-image: url("https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-intro.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: top left;
@@ -330,7 +342,7 @@ jQuery(document).ready(function(){
 }
 
 .history .history-upperDivider {
-  background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg");
+  background-image: url("https://www.dhccare.com/media/wysiwyg/content/regimen/dc/3-drops.svg");
   background-repeat: repeat-x;
   width: 325px;
   height: 24px;
@@ -338,7 +350,7 @@ jQuery(document).ready(function(){
 }
 
 .history .history-lowerDivider {
-  background-image: url("https://www.dhccare.com/media/wysiwyg/dev_test/dc/3-drops.svg");
+  background-image: url("https://www.dhccare.com/media/wysiwyg/content/regimen/dc/3-drops.svg");
   background-repeat: repeat-x;
   width: 109px;
   height: 24px;
@@ -1106,24 +1118,24 @@ jQuery(document).ready(function(){
 <div class="history-img"><picture> <source media="(max-width: 1024px)" srcset="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-intro-tab-mobile.jpg" /> <img src="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-intro.jpg" alt="picture of a Japanese Geisha" /> </picture></div>
 <div class="history-upper">
 <div class="history-upperDivider"></div>
-<p>Centuries ago, Japanese women craved pure white complexions, inspired by the delicate beauty of geisha. To achieve a dramatic look, they commonly used oshiroi, a bright white powder made from rice often blended with powdered metals, oil and wax—and to remove it, they massaged emollient oils into their skin and rinsed them away, followed by a foaming cleanser.</p>
+<p>Centuries ago, Japanese women craved pure white complexions, inspired by the delicate beauty of geisha. To achieve a dramatic look, they commonly used oshiroi, a bright white powder made from rice often blended with powdered metals, oil and wax&mdash;and to remove it, they massaged emollient oils into their skin and rinsed them away, followed by a foaming cleanser.</p>
 </div>
 <div class="history-lower">
-<p>Our taste in make-up has evolved since then, but the Japanese practice of removing make-up and cleansing with oil is here to stay. This double cleansing ritual does more than just remove make-up—it also nourishes and hydrates the skin.</p>
+<p>Our taste in makeup has evolved since then, but the Japanese practice of removing makeup and cleansing with oil is here to stay. This double cleansing ritual does more than just remove makeup&mdash;it also nourishes and hydrates the skin.</p>
 <div class="history-lowerDivider"></div>
 </div>
 </section><!-- history --><section class="info">
 <div class="info-border">
 <div class="info-whatIs">
 <h2 class="text-blue">What is Double Cleansing?</h2>
-<p>Our double cleanse regimen is a modern take on the centuries-old Japanese cleansing ritual. Simply put, it’s the best way to remove all traces of excess oil, sunscreen, daily grime, sweat, and eye and facial make-up—while preparing your skin for toner, serum and moisturiser. It does all this without clogging pores, upsetting your pH balance or stripping your skin of its natural moisture.<br /> <br /> Double cleansing won’t complicate your regular regimen. It only includes one more nourishing step to deliver benefits you can see and feel.</p>
+<p>Our double cleanse regimen is a modern take on the centuries-old Japanese cleansing ritual. Simply put, it&rsquo;s the best way to remove all traces of excess oil, sunscreen, daily grime, sweat, and eye and facial makeup&mdash;while preparing your skin for toner, serum and moisturizer. It does all this without clogging pores, upsetting your pH balance or stripping your skin of its natural moisture.<br /> <br /> Double cleansing won&rsquo;t complicate your regular regimen. It only includes one more nourishing step to deliver benefits you can see and feel.</p>
 </div>
 <!-- info whatIs -->
 <div class="stepsIcon">
 <div class="step1">
 <h6>STEP 1</h6>
 <h3 class="text-blue">Remove Impurities</h3>
-<p>Since oil naturally binds with oil, this step removes make-up, sebum and environmental impurities. Place a small amount of oil on dry hands and massage it over your dry face. Rinse with lukewarm water.</p>
+<p>Since oil naturally binds with oil, this step removes makeup, sebum and environmental impurities. Place a small amount of oil on dry hands and massage it over your dry face. Rinse with lukewarm water.</p>
 </div>
 <div class="info-icon"><img src="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-icon.svg" alt="DHC Double Cleansing icon" /></div>
 <div class="step2">
@@ -1140,15 +1152,15 @@ jQuery(document).ready(function(){
 </div>
 <div class="benefit three"><img class="drop" src="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-drop-blue.svg" alt="Nourish" />
 <p class="benefit-title">Nourish</p>
-<p>Organic virgin olive oil and Japanese botanicals hydrate and maintain skin’s pH balance</p>
+<p>Organic virgin olive oil and Japanese botanicals hydrate and maintain skin&rsquo;s pH balance</p>
 </div>
 <div class="benefit two"><img class="drop" src="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-drop-yellow.svg" alt="Defend" />
-<p class="benefit-title">Protect</p>
+<p class="benefit-title">Defend</p>
 <p>Antioxidants defend against free-radical damage and help protect skin from environmental irritants</p>
 </div>
 <div class="benefit four"><img class="drop" src="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-drop-blue.svg" alt="Set the Stage" />
 <p class="benefit-title">Set the Stage</p>
-<p>Prepares skin for the toner, serum and moisturiser that follow</p>
+<p>Prepares skin for the toner, serum and moisturizer that follow</p>
 </div>
 </div>
 <div class="video">
@@ -1165,42 +1177,49 @@ jQuery(document).ready(function(){
 <!-- info border --></section><!-- info --><section class="productInfo">
 <h2 class="text-blue">Find Your Double Cleanse</h2>
 <div id="productsSlider">
-<div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-classic-cleanse-tn.jpg"><a href="https://www.dhcuk.co.uk/the-classic-cleanse.html"><img src="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-classic-cleanse.jpg" alt="The Classic Cleanse" /></a>
+<div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-classic-cleanse-tn.jpg"><a href="https://www.dhccare.com/the-classic-cleanse.html"><img src="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-classic-cleanse.jpg" alt="The Classic Cleanse" /></a>
 <div class="productInfo-text">
-<h3 class="productInfo-title"><a class="text-blue" href="https://www.dhcuk.co.uk/the-classic-cleanse.html">The Classic Cleanse</a></h3>
-<p class="productInfo-desc"><a href="https://www.dhcuk.co.uk/the-classic-cleanse.html">An ideal introduction to the Japanese art of double cleansing. Features bestselling Deep Cleansing Oil and Mild Soap, both powered by antioxidant-rich organic virgin olive oil.</a></p>
-<p class="productDesc-cta"><a href="https://www.dhcuk.co.uk/the-classic-cleanse.html"><span>SUGGESTED SKIN TYPE:</span> A go-to solution for all skin types.</a></p>
+<h3 class="productInfo-title"><a class="text-blue" href="https://www.dhccare.com/the-classic-cleanse.html">The Classic Cleanse</a></h3>
+<p class="productInfo-desc"><a href="https://www.dhccare.com/the-classic-cleanse.html">An ideal introduction to the Japanese art of double cleansing. Features bestselling Deep Cleansing Oil and Mild Soap, both powered by antioxidant-rich organic virgin&nbsp;olive&nbsp;oil.</a></p>
+<p class="productDesc-cta"><a href="https://www.dhccare.com/the-classic-cleanse.html"><span>SUGGESTED SKIN TYPE:</span> A go-to solution for all skin types.</a></p>
 </div>
 </div>
-<div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-invigorating-cleanse-tn.jpg"><a href="https://www.dhcuk.co.uk/invigorating-cleanse.html"><img src="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-invigorating-cleanse.jpg" alt="The Invigorating Cleanse" /></a>
+<div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-hydrating-cleanse-tn.jpg"><a href="https://www.dhccare.com/hydrating-cleanse.html"><img src="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-hydrating-cleanse.jpg" alt="The Hydrating Cleanse" /></a>
 <div class="productInfo-text">
-<h3 class="productInfo-title"><a class="text-blue" href="https://www.dhcuk.co.uk/invigorating-cleanse.html">The Invigorating Cleanse</a></h3>
-<p class="productInfo-desc"><a href="https://www.dhcuk.co.uk/invigorating-cleanse.html">Minimise the appearance of pores with Pore Cleansing Oil and foaming, exfoliating Pore Face Wash. This powerful combo brims with botanicals like grapefruit, orange peel extract and olive oil.</a></p>
-<p class="productDesc-cta"><a href="https://www.dhcuk.co.uk/invigorating-cleanse.html"><span>SUGGESTED SKIN TYPE:</span> Optimal on oily or combination skin.</a></p>
+<h3 class="productInfo-title"><a class="productInfo-title" href="https://www.dhccare.com/hydrating-cleanse.html">The Hydrating Cleanse</a></h3>
+<p class="productInfo-desc"><a href="https://www.dhccare.com/hydrating-cleanse.html">Our most hydrating cleanser, Olive Concentrated Cleansing Oil, pairs with Olive Soap beauty bar to rejuvenate and soften. Perfect for dry or sun-damaged&nbsp;skin.</a></p>
+<p class="productDesc-cta"><a href="https://www.dhccare.com/hydrating-cleanse.html"><span>SUGGESTED SKIN TYPE:</span> Ideal for dry skin.</a></p>
 </div>
 </div>
-<div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-refreshing-cleanse-tn.jpg"><a href="https://www.dhcuk.co.uk/the-refreshing-cleanse.html"><img src="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-refreshing-cleanse.jpg" alt="The Refreshing Cleanse" /></a>
+<div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-invigorating-cleanse-tn.jpg"><a href="https://www.dhccare.com/invigorating-cleanse.html"><img src="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-invigorating-cleanse.jpg" alt="The Invigorating Cleanse" /></a>
 <div class="productInfo-text">
-<h3 class="productInfo-title"><a class="text-blue" href="https://www.dhcuk.co.uk/the-refreshing-cleanse.html">The Refreshing Cleanse</a></h3>
-<p class="productInfo-desc"><a href="https://www.dhcuk.co.uk/the-refreshing-cleanse.html">Sweep away the day’s grime and make-up with Deep Cleansing Oil and follow up with lightly exfoliating Face Wash Powder. For extra rich lather, whip up a creamy mousse in our Foaming Mesh.</a></p>
-<p class="productDesc-cta"><a href="https://www.dhcuk.co.uk/the-refreshing-cleanse.html"><span>SUGGESTED SKIN TYPE:</span> Suitable for all skin types.</a></p>
+<h3 class="productInfo-title"><a class="text-blue" href="https://www.dhccare.com/invigorating-cleanse.html">The Invigorating Cleanse</a></h3>
+<p class="productInfo-desc"><a href="https://www.dhccare.com/invigorating-cleanse.html">Minimize the appearance of pores with Pore Cleansing Oil and foaming, exfoliating Pore Face Wash. This powerful combo brims with botanicals like grapefruit, orange peel extract and olive oil.</a></p>
+<p class="productDesc-cta"><a href="https://www.dhccare.com/invigorating-cleanse.html"><span>SUGGESTED SKIN TYPE:</span> Optimal on oily or combination skin.</a></p>
 </div>
 </div>
-<div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-purifying-cleanse-tn.jpg"><a href="https://www.dhcuk.co.uk/the-purifying-cleanse.html"><img src="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-purifying-cleanse.jpg" alt="The Purifying Cleanse" /></a>
+<div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-refreshing-cleanse-tn.jpg"><a href="https://www.dhccare.com/refreshing-cleanse.html"><img src="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-refreshing-cleanse.jpg" alt="The Refreshing Cleanse" /></a>
 <div class="productInfo-text">
-<h3 class="productInfo-title"><a class="text-blue" href="https://www.dhcuk.co.uk/the-purifying-cleanse.html">The Purifying Cleanse</a></h3>
-<p class="productInfo-desc"><a href="https://www.dhcuk.co.uk/the-purifying-cleanse.html">Pair Deep Cleansing Oil with our liquid Face Wash, which energises with rosemary leaf oil and hydrates with virgin olive oil while dissolving impurities.</a></p>
-<p class="productDesc-cta"><a href="https://www.dhcuk.co.uk/the-purifying-cleanse.html"><span>SUGGESTED SKIN TYPE:</span> Works great on dry or sensitive skin.</a></p>
+<h3 class="productInfo-title"><a class="text-blue" href="https://www.dhccare.com/refreshing-cleanse.html">The Refreshing Cleanse</a></h3>
+<p class="productInfo-desc"><a href="https://www.dhccare.com/refreshing-cleanse.html">Sweep away the day&rsquo;s grime and makeup with Deep Cleansing Oil and follow up with lightly exfoliating Face Wash Powder. For extra rich lather, whip up a creamy mousse in our Foaming Mesh.</a></p>
+<p class="productDesc-cta"><a href="https://www.dhccare.com/refreshing-cleanse.html"><span>SUGGESTED SKIN TYPE:</span> Suitable for all skin types.</a></p>
+</div>
+</div>
+<div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-purifying-cleanse-tn.jpg"><a href="https://www.dhccare.com/the-purifying-cleanse.html"><img src="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-purifying-cleanse.jpg" alt="The Purifying Cleanse" /></a>
+<div class="productInfo-text">
+<h3 class="productInfo-title"><a class="text-blue" href="https://www.dhccare.com/the-purifying-cleanse.html">The Purifying Cleanse</a></h3>
+<p class="productInfo-desc"><a href="https://www.dhccare.com/the-purifying-cleanse.html">Pair Deep Cleansing Oil with our liquid Face Wash, which energizes with rosemary leaf oil and hydrates with virgin olive oil while dissolving&nbsp;impurities.</a></p>
+<p class="productDesc-cta"><a href="https://www.dhccare.com/the-purifying-cleanse.html"><span>SUGGESTED SKIN TYPE:</span> Works great on dry or sensitive skin.</a></p>
 </div>
 </div>
 </div>
 <!-- products-full --></section><!-- productInfo --><section class="carousel">
 <h3>Shop Double Cleanse Sets</h3>
-<div id="setsCarousel">{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="10" template="product/widget/content/grid.phtml" cache_lifetime="1" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`category_ids`,`operator`:`==`,`value`:`80`^]^]"}}</div>
+<div id="setsCarousel">{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="10" template="product/widget/content/grid.phtml" cache_lifetime="1" conditions_encoded="a:2:[i:1;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Combine`;s:10:`aggregator`;s:3:`all`;s:5:`value`;s:1:`1`;s:9:`new_child`;s:0:``;]s:4:`1--1`;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Product`;s:9:`attribute`;s:12:`category_ids`;s:8:`operator`;s:2:`==`;s:5:`value`;s:2:`79`;]]"}}</div>
 </section><section class="learn">
 <div class="learn-text">
 <h2 class="text-blue">Do You Double Cleanse?</h2>
 <p>Find out why everyone is going on about Double Cleansing and everything you need to know about this centuries-old Japanese beauty secret.</p>
-<a class="cta" href="https://www.dhcuk.co.uk/blog/do-you-double-cleanse/">Learn More &gt;</a></div>
+<a class="cta" href="https://www.dhccare.com/blog/do-you-double-cleanse-en/">Learn More &gt;</a></div>
 <div class="learn-img"><picture> <source media="(max-width: 500px)" srcset="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-blog-mobile.jpg" /> <source media="(max-width: 1024px)" srcset="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-blog-tablet.png" /> <img src="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-blog.jpg" alt="Double Cleanse blog post" /> </picture></div>
 </section></div>
