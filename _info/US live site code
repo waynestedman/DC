@@ -1186,7 +1186,7 @@ jQuery(document).ready(function(){
 </div>
 <div class="productInfo-details" data-thumbnail="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-hydrating-cleanse-tn.jpg"><a href="https://www.dhccare.com/hydrating-cleanse.html"><img src="https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-hydrating-cleanse.jpg" alt="The Hydrating Cleanse" /></a>
 <div class="productInfo-text">
-<h3 class="productInfo-title"><a class="productInfo-title" href="https://www.dhccare.com/hydrating-cleanse.html">The Hydrating Cleanse</a></h3>
+<h3 class="productInfo-title"><a class="text-blue" href="https://www.dhccare.com/hydrating-cleanse.html">The Hydrating Cleanse</a></h3>
 <p class="productInfo-desc"><a href="https://www.dhccare.com/hydrating-cleanse.html">Our most hydrating cleanser, Olive Concentrated Cleansing Oil, pairs with Olive Soap beauty bar to rejuvenate and soften. Perfect for dry or sun-damaged&nbsp;skin.</a></p>
 <p class="productDesc-cta"><a href="https://www.dhccare.com/hydrating-cleanse.html"><span>SUGGESTED SKIN TYPE:</span> Ideal for dry skin.</a></p>
 </div>
