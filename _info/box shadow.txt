@@ -1,0 +1,7 @@
+box-shadow: -1px -1px 15px 3px rgba(196,196,196,0.6);
+
+horizontal length -1px
+vertical length -1
+blur radius 15px
+spread radius 3px
+shadow color #c4c4c4 opacity .6 —> rgba(196,196,196,0.6)

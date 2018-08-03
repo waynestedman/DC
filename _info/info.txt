@@ -1,0 +1,11 @@
+URLs:
+
+https://www.dhccare.com/media/wysiwyg/content/regimen/dc/
+
+
+Sets emmet code:
+(.set>img+h5+h5+a.dc-btn{Shop Now})*5
+
+Blogs:
+https://www.dhccare.com/blog/do-you-double-cleanse-en/
+https://www.dhcuk.co.uk/blog/do-you-double-cleanse/

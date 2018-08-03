@@ -1,6 +1,17 @@
 $dcBlue: #00388d;
 $dcGold: #ffd54f;
 
+.hero, .history {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1280px;
+
+  img {
+    width: 1280px;
+    height: 100%;
+  }
+}
 .productInfo {
   display: flex;
   flex-direction: column;
@@ -16,6 +27,25 @@ $dcGold: #ffd54f;
     font-size: 24px;
     font-weight: 400;
   }
+  // .dc-btn {
+  //   position: absolute;
+  //   background: $dcBlue;
+  //   border: 1px solid $dcGold;
+  //   color: #fff;
+  //   padding: 10px 20px;
+  //   margin-top: 20px;
+  //   text-transform: uppercase;
+  //   cursor: pointer;
+  //   font-size: 20px;
+  //   font-weight: 400;
+  //
+  //   &:hover {
+  //     background: lighten($dcBlue, 20%);
+  //     border: 1px solid $dcBlue;
+  //     color: #fff;
+  //   }
+  // }
+
   .slick-next, .slick-arrow {
     border: none;
   }
@@ -23,20 +53,227 @@ $dcGold: #ffd54f;
     color: $dcBlue;
   }
 }
+.hero {
+  height: 100%;
+
+  .hero-img {
+    width: 100%;
+    float: left;
+
+    img {
+      max-width: 1280px;
+    }
+  }
+  .hero-text {
+    text-align: center;
+    padding-top: 120px;
+    left: 52%;
+    position: absolute;
+
+    img {
+      width: 225px;
+      height: 78px;
+      margin: 0 auto !important;
+    }
+    h1 {
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+}
+.history {
+  // background-image: url('https://www.dhccare.com/media/wysiwyg/content/regimen/dc/dc-intro.jpg');
+  // background-repeat: no-repeat;
+  // background-size: 100% 100%;
+  // background-position: top left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 4%;
+  height: 750px;
+
+  .history-img {
+    display: none;
+  }
+  .history-upper, .history-lower {
+    text-align: center;
+    padding-left: 30%;
+    width: 75%;
+  } // history-upper -lower
+  .history-upperDivider {
+    background-image: url('https://www.dhccare.com/media/wysiwyg/content/regimen/dc/3-drops.svg');
+    background-repeat: repeat-x;
+    width: 325px;
+    height: 24px;
+    margin: 0 auto 40px auto;
+  } // history-upperDivider
+  .history-lowerDivider {
+    background-image: url('https://www.dhccare.com/media/wysiwyg/content/regimen/dc/3-drops.svg');
+    background-repeat: repeat-x;
+    width: 109px;
+    height: 24px;
+    margin: 40px auto;
+  } // history-lowerDivider
+} // history
+.info {
+  background-color: rgba(255, 255, 255, .8);
+  width: 85%;
+  padding: 10px;
+  margin: -170px auto 40px auto;
+  z-index: 10;
+  box-shadow: -1px -1px 15px 3px rgba(196,196,196,0.6);
+
+  .info-border {
+    position: relative;
+    margin: 10px 20px;
+    // padding-bottom: 40px;
+    border: 2px solid $dcGold;
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      z-index: 2;
+      top: 10px;
+      left: -15px;
+      right: -15px;
+      bottom: 10px;
+      border: 2px solid $dcGold;
+    }
+  } // info-border
+  .info-whatIs {
+    text-align: center;
+    width: 82%;
+    margin: 40px auto 40px auto;
+    z-index: 97;
+  }
+  .stepsIcon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    // border-bottom: 1px solid $gray400;
+    width: 82%;
+    // padding-bottom: 40px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+    z-index: 98;
+
+    .step1, .step2 {
+      width: 80%;
+
+      h6 {
+        border-bottom: 1px solid $gray400;
+        width: 70px;
+        margin: 20px auto;
+        font-weight: 400;
+        padding-bottom: 10px;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    .info-icon {
+      width: 50%;
+      margin: 0 40px;
+
+      img {
+        width: 164px;
+      }
+    }
+  } //stepsIcon
+  .benefits {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center;
+    width: 85%;
+    margin: 0 auto;
+    z-index: 99;
+  }
+  .benefit {
+    width: 25%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+
+    .drop {
+      width: 20px;
+      // display: inline-block;
+      margin: 0 auto 10px auto !important;
+    }
+    p {
+      margin-left: auto;
+      margin-right: auto;
+      width: 78%;
+      display: inline-block;
+      font-size: 16px;
+
+      &.benefit-title {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 15px;
+      }
+    }
+  } // benefit
+  .video {
+    width: 80%;
+    margin: 20px auto 50px auto;
+    cursor: pointer;
+    // @include clearfix;
+
+    .video-thumbnail {
+      max-width: 1068px;
+      max-height: 244px;
+      margin: 0 auto;
+      z-index: 100;
+      position: relative;
+
+        .wistia_click_to_play {
+          display: inline-block !important;
+        }
+        .video-text {
+          position: absolute;
+          top: 10px;
+          left: 40px;
+
+          .video-button {
+            margin-right: 20px;
+            width: 34px;
+            height: 34px;
+            vertical-align: middle;
+            display: inline-block;
+          } // video-button
+          img {
+            padding-top: 12px;
+            width: 40px;
+          }
+          .overlay-text {
+            display: inline-block;
+            vertical-align: middle;
+            color: #000000;
+            font-size: 30px;
+            line-height: 1.4;
+            font-weight: 300;
+            margin-top: 2.6rem;
+            margin-bottom: .4rem;
+          }
+        } // video-text
+    } // video-thumbnail
+  } // video
+} // info
 .productInfo {
   width: 100%;
   padding-bottom: 140px;
-  background-color: $dcBlue;
 
   h2 {
     margin: 4rem  auto;
-    color: #fff;
   }
-  #blueSlider {
+  #productsSlider {
     width: 90%;
     margin: 0 auto;
     padding-left: 3%;
-    background-color: lighten($dcBlue, 65%);
 
     img {
       width: 320px;
@@ -64,7 +301,6 @@ $dcGold: #ffd54f;
       } // productDesc-cta
     } // productInfo-text
     .slick-dots {
-      background-color: lighten($dcBlue, 60%);
       bottom: -120px;
       left: 0;
 
@@ -83,10 +319,88 @@ $dcGold: #ffd54f;
       } // li
       .slick-active {
         a {
-          border-bottom: 2px solid #ddd;
+          border-bottom: 2px solid $dcBlue;
           padding-bottom: 6px;
         }
       } // slick-active
     } // slick-dots
   } // #productsSlider
 } // productInfo
+.carousel {
+  margin: 40px auto;
+  text-align: center;
+
+  h3 {
+    font-weight: 400;
+    font-size: 33px;
+  }
+  // #setsCarousel {
+  //   width: 90%;
+  //   margin: 0 auto;
+  //
+  //   .slick-track {
+  //     width: 100% !important;
+  //     margin: 0 auto;
+  //   }
+  //   .slick-slide {
+  //     width: 100% !important;
+  //   }
+  //   .product-item {
+  //     width: 200px;
+  //   }
+  //   .widget .block-products-list .add-button {
+  //     font-weight: 400;
+  //     // background: $blue700;
+  //     // border: 1px solid $blue700;
+  //     // color: #fff;
+  //     // padding: 10px 20px;
+  //     // margin-top: 20px;
+  //     //
+  //     // &:hover {
+  //     //   background: lighten($blue700, 20%);
+  //     //   border: 1px solid $blue700;
+  //     //   color: #fff;
+  //     // }
+  //   }
+  // } // setsCarousel
+} // carousel
+.learn {
+  max-height: 670px;
+  margin: 0;
+  padding: 0 0 20px 0;
+  max-width: 1280px;
+
+  .learn-text {
+    position: absolute;
+    margin-left: 6%;
+    display: inline-block;
+    width: 30%;
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+    // h5 {
+    //   font-size: 34px;
+    //   line-height: 1.3;
+    //   margin-top: 0;
+    //   margin-bottom: 2.2rem;
+    //   width: 60%;
+    // }
+    p {
+      margin-bottom: 2rem;
+    }
+    a:hover {
+      color: $dcBlue;
+    } // a hover
+  } // learn-text
+  .learn-img {
+    width: 100%;
+    display: inline-block;
+    float: right;
+
+    img {
+      width: 1280px;
+      float: right;
+    }
+  } // toners-img
+} // learn
